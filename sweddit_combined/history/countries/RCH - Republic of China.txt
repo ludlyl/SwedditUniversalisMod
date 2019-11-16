@@ -1,0 +1,6 @@
+government = republic
+add_government_reform = chinese_warlord
+religion = confucianism
+technology_group = chinese
+
+

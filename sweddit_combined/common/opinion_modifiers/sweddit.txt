@@ -1,0 +1,4 @@
+lit_denied_pol_monarch = {
+	opinion = -100
+	yearly_decay = 2
+}

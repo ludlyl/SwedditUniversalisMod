@@ -1,0 +1,300 @@
+﻿ex_merc_1 = {
+merc_maintenance_modifier = 0.02
+}
+ex_merc_2 = {
+merc_maintenance_modifier = 0.04
+}
+ex_merc_3 = {
+merc_maintenance_modifier = 0.06
+}
+ex_merc_4 = {
+merc_maintenance_modifier = 0.08
+}
+ex_merc_5 = {
+merc_maintenance_modifier = 0.11
+}
+ex_merc_6 = {
+merc_maintenance_modifier = 0.13
+}
+ex_merc_7 = {
+merc_maintenance_modifier = 0.15
+}
+ex_merc_8 = {
+merc_maintenance_modifier = 0.18
+}
+ex_merc_9 = {
+merc_maintenance_modifier = 0.2
+}
+ex_merc_10 = {
+merc_maintenance_modifier = 0.23
+}
+ex_merc_11 = {
+merc_maintenance_modifier = 0.25
+}
+ex_merc_12 = {
+merc_maintenance_modifier = 0.28
+}
+ex_merc_13 = {
+merc_maintenance_modifier = 0.31
+}
+ex_merc_14 = {
+merc_maintenance_modifier = 0.33
+}
+ex_merc_15 = {
+merc_maintenance_modifier = 0.36
+}
+ex_merc_16 = {
+merc_maintenance_modifier = 0.39
+}
+ex_merc_17 = {
+merc_maintenance_modifier = 0.42
+}
+ex_merc_18 = {
+merc_maintenance_modifier = 0.45
+}
+ex_merc_19 = {
+merc_maintenance_modifier = 0.48
+}
+ex_merc_20 = {
+merc_maintenance_modifier = 0.51
+}
+ex_merc_21 = {
+merc_maintenance_modifier = 0.54
+}
+ex_merc_22 = {
+merc_maintenance_modifier = 0.58
+}
+ex_merc_23 = {
+merc_maintenance_modifier = 0.61
+}
+ex_merc_24 = {
+merc_maintenance_modifier = 0.64
+}
+ex_merc_25 = {
+merc_maintenance_modifier = 0.68
+}
+ex_merc_26 = {
+merc_maintenance_modifier = 0.71
+}
+ex_merc_27 = {
+merc_maintenance_modifier = 0.75
+}
+ex_merc_28 = {
+merc_maintenance_modifier = 0.79
+}
+ex_merc_29 = {
+merc_maintenance_modifier = 0.82
+}
+ex_merc_30 = {
+merc_maintenance_modifier = 0.86
+}
+ex_merc_31 = {
+merc_maintenance_modifier = 0.9
+}
+ex_merc_32 = {
+merc_maintenance_modifier = 0.94
+}
+ex_merc_33 = {
+merc_maintenance_modifier = 0.98
+}
+ex_merc_34 = {
+merc_maintenance_modifier = 1.02
+}
+ex_merc_35 = {
+merc_maintenance_modifier = 1.06
+}
+ex_merc_36 = {
+merc_maintenance_modifier = 1.1
+}
+ex_merc_37 = {
+merc_maintenance_modifier = 1.14
+}
+ex_merc_38 = {
+merc_maintenance_modifier = 1.18
+}
+ex_merc_39 = {
+merc_maintenance_modifier = 1.22
+}
+ex_merc_40 = {
+merc_maintenance_modifier = 1.27
+}
+ex_merc_41 = {
+merc_maintenance_modifier = 1.31
+}
+ex_merc_42 = {
+merc_maintenance_modifier = 1.36
+}
+ex_merc_43 = {
+merc_maintenance_modifier = 1.4
+}
+ex_merc_44 = {
+merc_maintenance_modifier = 1.45
+}
+ex_merc_45 = {
+merc_maintenance_modifier = 1.5
+}
+ex_merc_46 = {
+merc_maintenance_modifier = 1.54
+}
+ex_merc_47 = {
+merc_maintenance_modifier = 1.59
+}
+ex_merc_48 = {
+merc_maintenance_modifier = 1.64
+}
+ex_merc_49 = {
+merc_maintenance_modifier = 1.69
+}
+ex_merc_50 = {
+merc_maintenance_modifier = 1.74
+}
+ex_merc_51 = {
+merc_maintenance_modifier = 1.79
+}
+ex_merc_52 = {
+merc_maintenance_modifier = 1.84
+}
+ex_merc_53 = {
+merc_maintenance_modifier = 1.89
+}
+ex_merc_54 = {
+merc_maintenance_modifier = 1.94
+}
+ex_merc_55 = {
+merc_maintenance_modifier = 2.0
+}
+ex_merc_56 = {
+merc_maintenance_modifier = 2.05
+}
+ex_merc_57 = {
+merc_maintenance_modifier = 2.1
+}
+ex_merc_58 = {
+merc_maintenance_modifier = 2.16
+}
+ex_merc_59 = {
+merc_maintenance_modifier = 2.21
+}
+ex_merc_60 = {
+merc_maintenance_modifier = 2.27
+}
+ex_merc_61 = {
+merc_maintenance_modifier = 2.32
+}
+ex_merc_62 = {
+merc_maintenance_modifier = 2.38
+}
+ex_merc_63 = {
+merc_maintenance_modifier = 2.44
+}
+ex_merc_64 = {
+merc_maintenance_modifier = 2.5
+}
+ex_merc_65 = {
+merc_maintenance_modifier = 2.56
+}
+ex_merc_66 = {
+merc_maintenance_modifier = 2.62
+}
+ex_merc_67 = {
+merc_maintenance_modifier = 2.68
+}
+ex_merc_68 = {
+merc_maintenance_modifier = 2.74
+}
+ex_merc_69 = {
+merc_maintenance_modifier = 2.8
+}
+ex_merc_70 = {
+merc_maintenance_modifier = 2.86
+}
+ex_merc_71 = {
+merc_maintenance_modifier = 2.92
+}
+ex_merc_72 = {
+merc_maintenance_modifier = 2.99
+}
+ex_merc_73 = {
+merc_maintenance_modifier = 3.05
+}
+ex_merc_74 = {
+merc_maintenance_modifier = 3.11
+}
+ex_merc_75 = {
+merc_maintenance_modifier = 3.18
+}
+ex_merc_76 = {
+merc_maintenance_modifier = 3.24
+}
+ex_merc_77 = {
+merc_maintenance_modifier = 3.31
+}
+ex_merc_78 = {
+merc_maintenance_modifier = 3.38
+}
+ex_merc_79 = {
+merc_maintenance_modifier = 3.44
+}
+ex_merc_80 = {
+merc_maintenance_modifier = 3.51
+}
+ex_merc_81 = {
+merc_maintenance_modifier = 3.58
+}
+ex_merc_82 = {
+merc_maintenance_modifier = 3.65
+}
+ex_merc_83 = {
+merc_maintenance_modifier = 3.72
+}
+ex_merc_84 = {
+merc_maintenance_modifier = 3.79
+}
+ex_merc_85 = {
+merc_maintenance_modifier = 3.86
+}
+ex_merc_86 = {
+merc_maintenance_modifier = 3.93
+}
+ex_merc_87 = {
+merc_maintenance_modifier = 4.01
+}
+ex_merc_88 = {
+merc_maintenance_modifier = 4.08
+}
+ex_merc_89 = {
+merc_maintenance_modifier = 4.15
+}
+ex_merc_90 = {
+merc_maintenance_modifier = 4.23
+}
+ex_merc_91 = {
+merc_maintenance_modifier = 4.3
+}
+ex_merc_92 = {
+merc_maintenance_modifier = 4.38
+}
+ex_merc_93 = {
+merc_maintenance_modifier = 4.45
+}
+ex_merc_94 = {
+merc_maintenance_modifier = 4.53
+}
+ex_merc_95 = {
+merc_maintenance_modifier = 4.61
+}
+ex_merc_96 = {
+merc_maintenance_modifier = 4.68
+}
+ex_merc_97 = {
+merc_maintenance_modifier = 4.76
+}
+ex_merc_98 = {
+merc_maintenance_modifier = 4.84
+}
+ex_merc_99 = {
+merc_maintenance_modifier = 4.92
+}
+ex_merc_100 = {
+merc_maintenance_modifier = 5.0
+}

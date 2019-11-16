@@ -1,0 +1,104 @@
+namespace = warringchina
+
+country_event = {
+	id = warringchina.1
+	title = warringchina.1.t
+	desc = warringchina.1.d
+	picture = BUDDHISM_BAD_eventPicture
+	
+	trigger = {
+		OR = {
+			culture_group = east_asian
+		}
+		NOT = { has_country_flag = claims_on_china }
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = claims_on_china
+			ROOT = {
+				country_event = {
+					id = warringchina.3
+					days = 3
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = warringchina.1.a
+		
+		xinan_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+		}
+		north_china_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+		}
+		south_china_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+		}
+	}
+}
+
+country_event = {
+	id = warringchina.2
+	title = warringchina.2.t
+	desc = warringchina.2.d
+	picture = BUDDHISM_BAD_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = warringchina.2.a
+		change_government = republic
+		change_government_reform_progress = 100
+	}
+	option = {
+		name = warringchina.2.b
+		add_stability = 1
+		add_legitimacy = 25
+	}
+}
+
+country_event = {
+	id = warringchina.3
+	title = warringchina.3.t
+	desc = warringchina.3.d
+	picture = BUDDHISM_BAD_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = warringchina.3.a
+		define_ruler = {
+			name = "Generico"
+			fixed = yes
+			adm = 3
+			dip = 3
+			mil = 3
+			custom_tooltip = ruler_not_random
+		}
+	}
+	
+	option = {
+		name = warringchina.3.b
+		define_ruler = {
+			fixed = no
+			hide_skills = yes
+			custom_tooltip = ruler_random
+		}
+	}
+}
