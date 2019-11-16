@@ -731,7 +731,7 @@ age_of_revolutions = {
 				factor = 10
 			}
 		}
-		ab_more_supply_limit = {
+		ab_no_distance_for_core = {
 			modifier = {
 				global_supply_limit_modifier = 1.0
 			}
