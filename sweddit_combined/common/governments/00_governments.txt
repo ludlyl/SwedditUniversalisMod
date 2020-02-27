@@ -27,8 +27,9 @@ monarchy = {
 				english_monarchy
 				mandala_reform
 				revolutionary_empire_reform
-				chinese_warlord
-				chinese_empire
+				chinese_hegemon_reform
+				confucian_state_reform
+				mandate_of_heaven_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -42,6 +43,7 @@ monarchy = {
 				khalsa_reform
 				deccani_society_reform
 				mughal_government
+				chinese_empire_reform
 			}
 		}
 		bureaucracy = {
@@ -62,7 +64,7 @@ monarchy = {
 				zabt_reform
 				permanent_marathas_council_reform
 				governmental_purbias_register_reform
-				imperial_examination
+				imperial_examination_reform
 			}
 		}
 		deliberative_assembly = {

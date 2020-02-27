@@ -1,8 +1,8 @@
 #695 - Hebei
 
-owner = YAN
-controller = YAN
-add_core = YAN
+owner = JIN
+controller = JIN
+add_core = JIN
 culture = chihan
 religion = confucianism
 capital = "Hejian"
@@ -17,4 +17,5 @@ is_city = yes
 
 discovered_by = chinese
 discovered_by = nomad_group
+
 

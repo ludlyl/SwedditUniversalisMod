@@ -1,8 +1,8 @@
 #670 - Ganzhou
 
-owner = NNG
-controller = NNG
-add_core = NNG
+owner = YUE
+controller = YUE
+add_core = YUE
 culture = hakka
 religion = confucianism
 capital = "Ganzhou"
@@ -17,3 +17,5 @@ is_city = yes
 
 discovered_by = chinese
 discovered_by = nomad_group
+
+
