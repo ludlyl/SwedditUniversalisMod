@@ -1,0 +1,127 @@
+## Sweddit Chinese reforms voted in s20 ##
+
+chinese_hegemon_reform = {
+	icon = "soldiers_3"
+	allow_normal_conversion = yes
+	legacy_equivalent = feudal_monarchy
+	start_territory_to_estates = 0.5
+	potential = {
+		NOT = { tag = IMP }
+		culture_group = east_asian
+		religion = confucianism
+		development = 145
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		land_morale = 0.05
+		ae_impact = -0.10
+		global_trade_goods_size_modifier = 0.10
+		max_states = 2
+	}
+}
+
+confucian_state_reform = {
+	icon = "general_eastern_administrative"
+	allow_normal_conversion = yes
+	legacy_equivalent = feudal_monarchy
+	start_territory_to_estates = 0.5
+	potential = {
+		religion = confucianism 
+		NOT = {
+			AND = {
+				development = 145
+				culture_group = east_asian
+			}
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		land_morale = 0.05
+		global_trade_goods_size_modifier = 0.10
+	}
+}
+
+mandate_of_heaven_reform = {
+	icon = "celestial_empire"
+	allow_normal_conversion = yes
+	potential = {
+		tag = IMP
+		religion = confucianism
+	}
+	fixed_rank = 3
+	legacy_equivalent = tsardom_legacy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+
+	modifiers = {
+		land_morale = 0.10
+		yearly_army_professionalism = 0.002
+		max_states = 6
+		global_trade_goods_size_modifier = 0.10
+	}
+}
+
+chinese_empire_reform = {
+	icon = "chinese_palace"
+	allow_normal_conversion = yes
+	potential = {
+		tag = IMP
+	}
+	modifiers = {
+		global_manpower_modifier = 0.20
+		land_forcelimit_modifier = 0.20
+	}
+}
+
+imperial_examination_reform = {
+	icon = "asian_scripture"
+	allow_normal_conversion = yes
+	potential = {
+		tag = IMP
+		religion = confucianism
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+
+	modifiers = {
+		monarch_admin_power = 2
+		diplomatic_upkeep = -1
+	}
+}
+
+
+## Sweddit India nerfs, these overwrite existing reforms with nerfed values ##
+
+poligar_reform_sweddit = {
+	icon = "indian_crown"
+	allow_normal_conversion = yes
+	potential = {
+		technology_group = indian
+		OR = {
+			culture_group = dravidian
+			primary_culture = oriya
+			primary_culture = sinhala
+		}
+	}
+	modifiers = {
+		infantry_power = 0.1 # Dev cost removed here from S18 vote
+	}
+}
+
+permanent_marathas_council_reform = {
+	icon = "noble_indian"
+	allow_normal_conversion = yes
+	potential = {
+		has_estate = estate_maratha
+		technology_group = indian
+	}
+	modifiers = {
+		leader_land_shock = 1 # Voted in this nerf in S18 vote
+		# reduce noble loyalty and influence if has estate
+	}
+	custom_attributes = {
+		maratha_general_interaction = yes
+	}
+}

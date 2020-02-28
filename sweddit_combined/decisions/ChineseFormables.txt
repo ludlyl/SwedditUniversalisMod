@@ -1,37 +1,37 @@
 country_decisions = {
 
-	form_beiyang_china = {
+	form_chinese_empire = {
 		major = yes
 		potential = {
-			NOT = { has_country_flag = formed_beiyang_china }
+			NOT = { has_country_flag = formed_chinese_empire }
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
+			OR = {
+				tag = MNG
+				was_never_end_game_tag_trigger = yes
+			}
 			culture_group = east_asian
 			is_colonial_nation = no
-			NOT = { tag = IMP }
 		}
 		provinces_to_highlight = {
 			OR = {
 				province_id = 1816 #Beijing
-				province_id = 4194
-				province_id = 703 
-				province_id = 697
-				province_id = 2136
-				province_id = 696
-				province_id = 695
-				province_id = 2177
-				province_id = 693
-				province_id = 2178
-				province_id = 694
-				province_id = 692
-				province_id = 1836
-				province_id = 688
-				province_id = 2137
-				province_id = 2140
-				province_id = 691
-				province_id = 2138
-				province_id = 690
-				province_id = 2139
+				province_id = 691 # Jinan
+				province_id = 693 #Taiyuan
+				province_id = 688 #Kaifeng
+				province_id = 685 #Yangzhou
+				province_id = 1821 #Nanjing
+				province_id = 684 #Hangzhou
+				province_id = 667 #Canton
+				province_id = 2157 #Waichow
+				province_id = 1829 #Quangzhou
+				province_id = 669 #Fuzhou
+				province_id = 2174 #Hengyang
+				province_id = 662 #Yunnan
+				province_id = 682 #Wuchang
+				province_id = 700 #Xi'an
+				province_id = 680 #Chongqing
+				province_id = 679 #Chengdu
+				province_id = 699 #Lanzhou
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -40,104 +40,37 @@ country_decisions = {
 		}
 		allow = {
 			adm_tech = 10
-			is_free_or_tributary_trigger = yes
-			culture_group = east_asian
-			is_at_war = no
-			owns_core_province = 1816 #Beijing
-			owns_core_province = 4194
-			owns_core_province = 703 
-			owns_core_province = 697
-			owns_core_province = 2136
-			owns_core_province = 696
-			owns_core_province = 695
-			owns_core_province = 2177
-			owns_core_province = 693
-			owns_core_province = 2178
-			owns_core_province = 694
-			owns_core_province = 692
-			owns_core_province = 1836
-			owns_core_province = 688
-			owns_core_province = 2137
-			owns_core_province = 2140
-			owns_core_province = 691
-			owns_core_province = 2138
-			owns_core_province = 690
-			owns_core_province = 2139
-		}
-		effect = {
-			1816 = {
-				add_base_tax = 2
-				add_base_production = 2
-				add_base_manpower = 2
-				move_capital_effect = yes
-			}
-			change_tag = RCH
-			remove_non_electors_emperors_from_empire_effect = yes
-			china_superregion = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = RCH
-			}
-			add_prestige = 20
-			set_government_rank = 2
-			if = {
-				limit = { has_custom_ideas = no }
-				country_event = { id = ideagroups.1 } #Swap Ideas
-			}
-			country_event = { id = warringchina.2 } #Swap Government
-			set_country_flag = formed_beiyang_china
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		ai_importance = 400
-	}
-	
-	form_chinese_empire = {
-		major = yes
-		potential = {
-			NOT = { has_country_flag = formed_chinese_empire }
-			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
-			culture_group = east_asian
-			is_colonial_nation = no
-			NOT = { tag = RCH }
-		}
-		provinces_to_highlight = {
-			OR = {
-				region = south_china_region
-				region = north_china_region
-			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
-		}
-		allow = {
-			adm_tech = 15
 			stability = 3
 			is_free_or_tributary_trigger = yes
 			culture_group = east_asian
 			is_at_war = no
 			AND = {
-				owns_core_province = 1821 #Nanjing
 				owns_core_province = 1816 #Beijing
+				owns_core_province = 691 # Jinan
+				owns_core_province = 693 #Taiyuan
+				owns_core_province = 688 #Kaifeng
+				owns_core_province = 685 #Yangzhou
+				owns_core_province = 1821 #Nanjing
+				owns_core_province = 684 #Hangzhou
+				owns_core_province = 667 #Canton
+				owns_core_province = 2157 #Waichow
+				owns_core_province = 1829 #Quangzhou
+				owns_core_province = 669 #Fuzhou
 				owns_core_province = 2174 #Hengyang
+				owns_core_province = 662 #Yunnan
+				owns_core_province = 682 #Wuchang
 				owns_core_province = 700 #Xi'an
-				owns_core_province = 667 #Beijing
+				owns_core_province = 680 #Chongqing
+				owns_core_province = 679 #Chengdu
+				owns_core_province = 699 #Lanzhou
 			}
-			OR = {
-				south_china_region= {
-					type = all
+			calc_true_if = {
+				all_province = {
+					superregion = china_superregion
 					owned_by = ROOT
 				}
-				north_china_region= {
-					type = all
-					owned_by = ROOT
-				}
+				amount = 50
 			}
-			
 		}
 		effect = {
 			1821 = {
@@ -160,13 +93,43 @@ country_decisions = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
+			if = {
+				limit = { religion = confucianism }
+				add_government_reform = mandate_of_heaven_reform
+				add_government_reform = imperial_examination_reform
+			}
 			set_country_flag = formed_chinese_empire
-			add_government_reform = chinese_empire
-			add_government_reform = imperial_examination
+			add_government_reform = chinese_empire_reform
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		ai_importance = 400
+	}
+
+	adopt_confucian_administration = {
+		major = yes
+		potential = {
+			religion = confucianism
+			NOT = { 
+				OR = {
+					has_reform = confucian_state_reform
+					has_reform = chinese_hegemon_reform
+					has_reform = mandate_of_heaven_reform
+				}
+			}
+		}
+		allow = {
+			stability = 1
+			is_at_war = no	
+			harmony = 75
+		}
+		effect = {
+			add_government_reform = confucian_state_reform
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
 	}
 }

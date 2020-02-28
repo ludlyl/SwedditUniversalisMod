@@ -1,8 +1,8 @@
 #664 - Lingyun
 
-owner = CGS
-controller = CGS
-add_core = CGS
+owner = YUE
+controller = YUE
+add_core = YUE
 culture = zhuang
 religion = confucianism
 capital = "Lingyun"
