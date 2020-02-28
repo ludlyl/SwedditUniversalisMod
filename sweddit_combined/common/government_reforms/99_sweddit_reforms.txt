@@ -9,7 +9,7 @@ chinese_hegemon_reform = {
 		NOT = { tag = IMP }
 		culture_group = east_asian
 		religion = confucianism
-		development = 145
+		total_development = 145
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
@@ -30,7 +30,7 @@ confucian_state_reform = {
 		religion = confucianism 
 		NOT = {
 			AND = {
-				development = 145
+				total_development = 145
 				culture_group = east_asian
 			}
 		}
