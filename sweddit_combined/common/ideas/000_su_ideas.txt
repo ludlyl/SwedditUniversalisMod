@@ -77,83 +77,6 @@ LNG_ideas = {
 	}
 }
 
-CMI_ideas = {
-	start = {
-		infantry_power = 0.10
-		stability_cost_modifier = -0.15
-	}
-
-	bonus = {
-		global_own_trade_power = 0.25
-	}
-	
-	trigger = {
-		tag = CMI
-	}
-	free = yes		#will be added at load.
-	
-	CMI_1 = {
-		discipline = 0.05
-	}
-	CMI_2 = {
-		ae_impact = -0.1
-	}
-	CMI_3 = {
-		land_morale = 0.10
-	}
-	CMI_4 = {
-		movement_speed = 0.15
-	}
-	CMI_5 = {
-		prestige = 1
-	}
-	CMI_6 = {
-		global_autonomy = -0.1
-	}
-	CMI_7 = {
-		advisor_pool = 1
-	}
-}
-
-
-CYI_ideas = {
-	start = {
-		infantry_power = 0.10
-		infantry_cost = -0.1
-	}
-
-	bonus = {
-		army_tradition = 0.5
-	}
-	
-	trigger = {
-		tag = CYI
-	}
-	free = yes		#will be added at load.
-	
-	CYI_1 = {
-		global_tax_modifier = 0.1
-	}
-	CYI_2 = {
-		land_morale = 0.10
-	}
-	CYI_3 = {
-		prestige = 1
-	}
-	CYI_4 = {
-		global_manpower_modifier = 0.20
-	}
-	CYI_5 = {
-		leader_land_fire = 1
-	}
-	CYI_6 = {
-		discipline = 0.05
-	}
-	CYI_7 = {
-		army_tradition_decay = -0.01
-	}
-}
-
 WUU_ideas = {
 	start = {
 		trade_efficiency = 0.15
@@ -589,7 +512,7 @@ JIN_ideas = {
 	bonus = {
 		discipline = 0.05
 	}
-	
+
 	trigger = {
 		tag = JIN
 	}
