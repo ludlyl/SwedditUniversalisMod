@@ -148,6 +148,7 @@ monarchy = {
 		daimyo
 		shogunate
 		indep_daimyo
+		mandate_of_heaven_reform
 		states_general_reform
 		parliamentary_reform
 	}
