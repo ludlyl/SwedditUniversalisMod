@@ -1,4 +1,4 @@
-ex_merc_1 = {
+﻿ex_merc_1 = {
 merc_maintenance_modifier = 0.02
 }
 ex_merc_2 = {
