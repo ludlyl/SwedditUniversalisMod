@@ -87,7 +87,7 @@ country_decisions = {
 				}
 				add_permanent_claim = IMP
 			}
-			add_prestige = 50
+			add_prestige = 25
 			set_government_rank = 3
 			if = {
 				limit = { has_custom_ideas = no }

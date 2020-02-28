@@ -1,4 +1,4 @@
-## Sweddit Chinese reforms ##
+## Sweddit Chinese reforms voted in s20 ##
 
 chinese_hegemon_reform = {
 	icon = "soldiers_3"
@@ -9,12 +9,7 @@ chinese_hegemon_reform = {
 		NOT = { tag = IMP }
 		culture_group = east_asian
 		religion = confucianism
-		OR = {
-			tag = CHC
-			tag = YUE
-			tag = JIN
-			tag = WUU
-		}
+		development = 145
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
@@ -32,13 +27,10 @@ confucian_state_reform = {
 	legacy_equivalent = feudal_monarchy
 	start_territory_to_estates = 0.5
 	potential = {
-		religion = confucianism
-		NOT = {
-			tag = IMP
-			tag = CHC
-			tag = YUE
-			tag = JIN
-			tag = WUU
+		religion = confucianism 
+		OR = {
+			NOT = { development = 145 }
+			NOT = { culture_group = east_asian}
 		}
 	}
 	valid_for_nation_designer = yes

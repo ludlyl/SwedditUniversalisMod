@@ -368,6 +368,7 @@ CHC_ideas = {
 	}
 	CHC_2 = {
 		prestige_decay = -0.1
+		num_accepted_cultures = 1
 	}
 	CHC_3 = {
 		manpower_recovery_speed = 0.1

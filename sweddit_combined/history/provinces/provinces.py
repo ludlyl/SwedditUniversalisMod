@@ -22,7 +22,7 @@ for filename in os.listdir("."):
 
     if province_id in china_provinces:
         old_file = open(filename, "r")
-        new_file = open("new/" + filename, "w+")
+        new_text = ""
         owner = china_provinces[province_id]
         skip = False
         firstCore = True
@@ -33,18 +33,20 @@ for filename in os.listdir("."):
             elif line.startswith("add_core"):
                 if firstCore:
                     firstCore = False
-                    new_file.write("add_core = " + owner + "\n")
+                    new_text += "add_core = " + owner + "\n"
             elif line.startswith("owner"):
-                new_file.write("owner = " + owner + "\n")
+                new_text += "owner = " + owner + "\n"
             elif line.startswith("controller"):
-                new_file.write("controller = " + owner + "\n")
+                new_text += "controller = " + owner + "\n"
             elif re.match(r"\d{4}\.\d+\.\d+.*", line):
                 if "}" not in line:
                     skip = True
             else:
-                new_file.write(line)
+                new_text += line
         if province_id in fort_provinces:
-            new_file.write("fort_15th = yes")
+            new_text += "fort_15th = yes"
+        new_file = open("new/" + filename, "w+")
+        new_file.write(new_text.strip())
         old_file.close()
         new_file.close()
 
