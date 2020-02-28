@@ -1396,7 +1396,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 60
+		months = 600
 	}
 
 	# FULL CELIBATE
