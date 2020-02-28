@@ -7,8 +7,8 @@ add_accepted_culture = chihan
 capital = 693	#Taiyuan
 1434.06.15 = { #Coronation
 	monarch = {
-		name = wengong
-		dynasty = jin
+		name = Wengong
+		dynasty = Jin
 		adm = 6
 		dip = 4
 		mil = 5
@@ -18,23 +18,20 @@ capital = 693	#Taiyuan
 		religion = confucianism
 		culture = jin
 	}
-	clear_scripted_personalities = yes
-	add_ruler_personality = martial_educator_personality
-	add_ruler_personality = lawgiver_personality
-	add_ruler_personality = well_connected_personality
-}
-	
-1404.10.17 = {
 	heir = {
-		name = xiang
-		monarch_name = xiang
-		dynasty = jin
+		name = Xiang
+		monarch_name = Xiang
+		dynasty = Jin
 		birth_date = 1404.10.17
+		death_date = 1445.01.01
 		claim = 95
 		adm = 3
 		dip = 3
 		mil = 4
 	}
 	clear_scripted_personalities = yes
+	add_ruler_personality = martial_educator_personality
+	add_ruler_personality = lawgiver_personality
+	add_ruler_personality = well_connected_personality
 	add_heir_personality = tactical_genius_personality
 }

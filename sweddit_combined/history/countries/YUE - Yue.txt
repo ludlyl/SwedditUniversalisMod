@@ -30,6 +30,7 @@ capital = 667	#Canton
 		monarch_name = Goujian
 		dynasty = Yue
 		birth_date = 1424.02.27
+		death_date = 1445.01.01
 		claim = 95
 		adm = 4
 		dip = 4

@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
  SHE_ADJ:0 "Shenyang"
  SHE:0 "Shenyang"
  SHE_ideas:0 "Manchu Ideas"
@@ -72,3 +72,5 @@ l_english:
  chinese_empire_reform_desc:0 "A united China shall prosper."
  imperial_examination_reform:0 "Chinese Imperial Examination"
  imperial_examination_reform_desc:0 "The Imperial Examination system has improved the bureaucratic performance of our nation substantially by only allowing proficient administrators"
+ adopt_confucian_administration_title:0 "Adopt Confucian Administration"
+ adopt_confucian_administration_desc:0 "Jiayou!"

@@ -50,9 +50,7 @@ LNG_ideas = {
 	}
 	
 	trigger = {
-		OR = {
-			tag = LNG
-		}
+		tag = LNG
 	}
 	free = yes		#will be added at load.
 	
@@ -90,9 +88,7 @@ CMI_ideas = {
 	}
 	
 	trigger = {
-		OR = {
-			tag = CMI
-		}
+		tag = CMI
 	}
 	free = yes		#will be added at load.
 	
@@ -131,9 +127,7 @@ CYI_ideas = {
 	}
 	
 	trigger = {
-		OR = {
-			tag = CYI
-		}
+		tag = CYI
 	}
 	free = yes		#will be added at load.
 	
@@ -171,9 +165,7 @@ WUU_ideas = {
 	}
 	
 	trigger = {
-		OR = {
-			tag = WUU
-		}
+		tag = WUU
 	}
 	free = yes		#will be added at load.
 	
@@ -185,7 +177,7 @@ WUU_ideas = {
 		idea_cost = 0.10
 	}
 	WUU_3 = {
-		build_cost = 0.10
+		build_cost = -0.10
 	}
 	WUU_4 = {
 		siege_ability = 0.10
@@ -213,9 +205,7 @@ MIN_ideas = {
 	}
 	
 	trigger = {
-		OR = {
-			tag = MIN
-		}
+		tag = MIN
 	}
 	free = yes		#will be added at load.
 	
@@ -253,9 +243,7 @@ YUE_ideas = {
 	}
 	
 	trigger = {
-		OR = {
-			tag = YUE
-		}
+		tag = YUE
 	}
 	free = yes		#will be added at load.
 	
@@ -295,9 +283,7 @@ CGS_ideas = {
 	}
 	
 	trigger = {
-		OR = {
-			tag = CGS
-		}
+		tag = CGS
 	}
 	free = yes		#will be added at load.
 	
@@ -335,9 +321,7 @@ NNG_ideas = {
 	}
 	
 	trigger = {
-		OR = {
-			tag = NNG
-		}
+		tag = NNG
 	}
 	free = yes		#will be added at load.
 	
@@ -375,9 +359,7 @@ CHC_ideas = {
 	}
 	
 	trigger = {
-		OR = {
-			tag = CHC
-		}
+		tag = CHC
 	}
 	free = yes		#will be added at load.
 	
@@ -417,9 +399,7 @@ CXI_ideas = {
 	}
 	
 	trigger = {
-		OR = {
-			tag = CXI
-		}
+		tag = CXI
 	}
 	free = yes		#will be added at load.
 	
@@ -458,9 +438,7 @@ CSH_ideas = {
 	}
 	
 	trigger = {
-		OR = {
-			tag = CSH
-		}
+		tag = CSH
 	}
 	free = yes		#will be added at load.
 	
@@ -498,9 +476,7 @@ QIN_ideas = {
 	}
 	
 	trigger = {
-		OR = {
-			tag = QIN
-		}
+		tag = QIN
 	}
 	free = yes		#will be added at load.
 	
@@ -538,9 +514,7 @@ QIC_ideas = {
 	}
 	
 	trigger = {
-		OR = {
-			tag = QIC
-		}
+		tag = QIC
 	}
 	free = yes		#will be added at load.
 	
@@ -578,9 +552,7 @@ YAN_ideas = {
 	}
 	
 	trigger = {
-		OR = {
-			tag = YAN
-		}
+		tag = YAN
 	}
 	free = yes		#will be added at load.
 	
@@ -618,9 +590,7 @@ JIN_ideas = {
 	}
 	
 	trigger = {
-		OR = {
-			tag = JIN
-		}
+		tag = JIN
 	}
 	free = yes		#will be added at load.
 	
@@ -661,9 +631,7 @@ SHU_ideas = {
 	}
 	
 	trigger = {
-		OR = {
-			tag = SHU
-		}
+		tag = SHU
 	}
 	free = yes		#will be added at load.
 	

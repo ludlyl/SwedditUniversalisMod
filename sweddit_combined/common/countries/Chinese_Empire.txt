@@ -325,7 +325,7 @@ leader_names = {
 	Kong Jiao Si Pan Zuo Ding Bao Yan Tan Han Luo Xie Yuan Qin Ruan	Niu Zeng
 	Dong Lin Shen Ouyang Su Yu Ren Chai Xia Mo Dai Jiang Yue Jia Xiong Cui
 	"Ou'yang" "Huangfu" "Dongfang" "Linghu" "Sun Tzu" "Cao Cao"
-	"Lü Bu" "Guan Yu" "Zhuang Fei" 
+	"Lu Bu" "Guan Yu" "Zhuang Fei" 
 }
 
 ship_names = {

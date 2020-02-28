@@ -14,8 +14,24 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				region = south_china_region
-				region = north_china_region
+				province_id = 1816 #Beijing
+				province_id = 691 # Jinan
+				province_id = 693 #Taiyuan
+				province_id = 688 #Kaifeng
+				province_id = 685 #Yangzhou
+				province_id = 1821 #Nanjing
+				province_id = 684 #Hangzhou
+				province_id = 667 #Canton
+				province_id = 2157 #Waichow
+				province_id = 1829 #Quangzhou
+				province_id = 669 #Fuzhou
+				province_id = 2174 #Hengyang
+				province_id = 662 #Yunnan
+				province_id = 682 #Wuchang
+				province_id = 700 #Xi'an
+				province_id = 680 #Chongqing
+				province_id = 679 #Chengdu
+				province_id = 699 #Lanzhou
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -48,17 +64,13 @@ country_decisions = {
 				owns_core_province = 679 #Chengdu
 				owns_core_province = 699 #Lanzhou
 			}
-			OR = {
-				south_china_region= {
-					type = all
+			calc_true_if = {
+				all_province = {
+					superregion = china_superregion
 					owned_by = ROOT
 				}
-				north_china_region= {
-					type = all
-					owned_by = ROOT
-				}
+				amount = 50
 			}
-			
 		}
 		effect = {
 			1821 = {
@@ -93,5 +105,28 @@ country_decisions = {
 			factor = 1
 		}
 		ai_importance = 400
+	}
+
+	adopt_confucian_administration = {
+		major = yes
+		potential = {
+			religion = confucianism
+			NOT = { 
+				has_reform = confucian_state_reform
+				has_reform = chinese_hegemon_reform
+			}
+		}
+		allow = {
+			stability = 1
+			is_at_war = no	
+			harmony = 75
+		}
+		effect = {
+			add_government_reform = confucian_state_reform
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
 	}
 }
