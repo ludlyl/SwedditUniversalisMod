@@ -28,9 +28,11 @@ confucian_state_reform = {
 	start_territory_to_estates = 0.5
 	potential = {
 		religion = confucianism 
-		OR = {
-			NOT = { development = 145 }
-			NOT = { culture_group = east_asian}
+		NOT = {
+			AND = {
+				development = 145
+				culture_group = east_asian
+			}
 		}
 	}
 	valid_for_nation_designer = yes

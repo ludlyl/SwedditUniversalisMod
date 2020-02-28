@@ -112,8 +112,11 @@ country_decisions = {
 		potential = {
 			religion = confucianism
 			NOT = { 
-				has_reform = confucian_state_reform
-				has_reform = chinese_hegemon_reform
+				OR = {
+					has_reform = confucian_state_reform
+					has_reform = chinese_hegemon_reform
+					has_reform = mandate_of_heaven_reform
+				}
 			}
 		}
 		allow = {
