@@ -97,7 +97,7 @@ WUU_ideas = {
 	}
 	WUU_2 = {
 		global_trade_power = 0.15
-		idea_cost = 0.10
+		idea_cost = -0.10
 	}
 	WUU_3 = {
 		build_cost = -0.10
@@ -177,7 +177,7 @@ YUE_ideas = {
 		naval_morale = 0.20
 	}
 	YUE_3 = {
-		army_tradition_decay = -0.1
+		army_tradition_decay = -0.01
 	}
 	YUE_4 = {
 		global_ship_trade_power  = 0.20
