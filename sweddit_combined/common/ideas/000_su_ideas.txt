@@ -290,7 +290,7 @@ CHC_ideas = {
 		movement_speed = 0.1
 	}
 	CHC_2 = {
-		prestige_decay = -0.1
+		prestige_decay = -0.01
 		num_accepted_cultures = 1
 	}
 	CHC_3 = {
