@@ -18,13 +18,6 @@ capital = 667	#Canton
 		religion = confucianism
 		culture = cantonese
 	}
-	clear_scripted_personalities = yes
-	add_ruler_personality = careful_personality
-	add_ruler_personality = intricate_web_weaver_personality
-	add_ruler_personality = charismatic_negotiator_personality
-}
-	
-1424.02.27 = {
 	heir = {
 		name = Goujian
 		monarch_name = Goujian
@@ -37,5 +30,8 @@ capital = 667	#Canton
 		mil = 5
 	}
 	clear_scripted_personalities = yes
+	add_ruler_personality = careful_personality
+	add_ruler_personality = charismatic_negotiator_personality
+	add_ruler_personality = intricate_web_weaver_personality
 	add_heir_personality = bold_fighter_personality
 }

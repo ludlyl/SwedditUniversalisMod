@@ -5,7 +5,7 @@ religion = confucianism
 primary_culture = hubei
 add_accepted_culture = sichuanese
 capital = 682	#Wuchang
-1421.04.28 = { #Coronation
+1415.04.28 = { #Coronation
 	monarch = {
 		name = Zhuang
 		dynasty = Chu
@@ -18,13 +18,6 @@ capital = 682	#Wuchang
 		religion = confucianism
 		culture = hubei
 	}
-	clear_scripted_personalities = yes
-	add_ruler_personality = inspiring_leader_personality
-	add_ruler_personality = drunkard_personality
-	add_ruler_personality = architectural_visionary_personality
-}
-	
-1424.03.21 = {
 	heir = {
 		name = Gong
 		monarch_name = Gong
@@ -37,5 +30,8 @@ capital = 682	#Wuchang
 		mil = 4
 	}
 	clear_scripted_personalities = yes
+	add_ruler_personality = inspiring_leader_personality
+	add_ruler_personality = drunkard_personality
+	add_ruler_personality = architectural_visionary_personality
 	add_heir_personality = conqueror_personality
 }
