@@ -17,7 +17,7 @@ chinese_hegemon_reform = {
 		land_morale = 0.05
 		ae_impact = -0.10
 		global_trade_goods_size_modifier = 0.10
-		max_states = 2
+		governing_capacity = 100
 	}
 }
 
@@ -58,7 +58,7 @@ mandate_of_heaven_reform = {
 	modifiers = {
 		land_morale = 0.10
 		yearly_army_professionalism = 0.002
-		max_states = 6
+		governing_capacity = 300
 		global_trade_goods_size_modifier = 0.10
 	}
 }

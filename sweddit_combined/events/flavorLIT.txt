@@ -1,7 +1,7 @@
 ########################################
 # Flavor Events for Lithuania
 #
-# Scripted by Sara Wendel-Örtqvist
+# Scripted by Sara Wendel-ï¿½rtqvist
 ########################################
 
 namespace = flavor_lit
@@ -806,7 +806,7 @@ country_event = {
 	}
 }
 
-# Event is changed in sweddit universalis mod
+# Sweddit change: Allows Lithuania to choose if they want PU with Poland
 country_event = {
 	id = flavor_lit.14
 	title = flavor_lit.14.t
@@ -865,8 +865,8 @@ country_event = {
 		
 		POL = {
 				add_opinion = {
-				who = ROOT
-				modifier = lit_denied_pol_monarch
+					who = ROOT
+					modifier = lit_denied_pol_monarch
 				}
 			}
 		

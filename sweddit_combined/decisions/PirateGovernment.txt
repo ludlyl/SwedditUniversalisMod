@@ -1,9 +1,12 @@
+# Sweddit change: Removed "Hoist the black flag" decision
 country_decisions = {
 	pirate_king_decision = {
 		major = yes
 		potential = {
+			always = no
 			has_reform = pirate_republic_reform
 			NOT = { has_dlc = "Dharma" }
+			NOT = { has_dlc = "Emperor" }
 		}
 		allow = {
 			adm_tech = 12
@@ -17,7 +20,7 @@ country_decisions = {
 			}
 		}
 		effect = {
-			set_legacy_government = pirate_kingdom
+			#set_legacy_government = pirate_kingdom
 			add_stability = -1
 			set_country_flag = recently_changed_government_flag
 		}
@@ -28,8 +31,10 @@ country_decisions = {
 	black_market_consortium_decision = {
 		major = yes
 		potential = {
+			always = no
 			has_reform = pirate_republic_reform
 			NOT = { has_dlc = "Dharma" }
+			NOT = { has_dlc = "Emperor" }
 		}
 		allow = {
 			adm_tech = 12
@@ -44,7 +49,7 @@ country_decisions = {
 			}
 		}
 		effect = {
-			set_legacy_government = black_market_consortium_government
+			#set_legacy_government = black_market_consortium_government
 			add_stability = -1
 			set_country_flag = recently_changed_government_flag
 		}
@@ -55,8 +60,10 @@ country_decisions = {
 	war_against_the_world_decision = {
 		major = yes
 		potential = {
+			always = no
 			has_reform = pirate_republic_reform
 			NOT = { has_dlc = "Dharma" }
+			NOT = { has_dlc = "Emperor" }
 		}
 		allow = {
 			adm_tech = 12
@@ -72,7 +79,7 @@ country_decisions = {
 		}
 		effect = {
 			add_stability = -1
-			set_legacy_government = war_against_the_world_government
+			#set_legacy_government = war_against_the_world_government
 			abolish_slavery_effect = yes
 			set_country_flag = recently_changed_government_flag
 		}
@@ -83,8 +90,10 @@ country_decisions = {
 	lower_black_flag_decision = {
 		major = yes
 		potential = {
+			always = no
 			has_reform = pirate_republic_reform
 			NOT = { has_dlc = "Dharma" }
+			NOT = { has_dlc = "Emperor" }
 		}
 		allow = {
 			stability = 1
@@ -98,7 +107,7 @@ country_decisions = {
 		}
 		effect = {
 			add_stability = -1
-			set_legacy_government = oligarchic_republic
+			#set_legacy_government = oligarchic_republic
 			set_country_flag = recently_changed_government_flag
 		}
 		ai_will_do = {

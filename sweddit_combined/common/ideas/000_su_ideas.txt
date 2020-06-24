@@ -84,7 +84,7 @@ WUU_ideas = {
 	}
 
 	bonus = {
-		possible_mercenaries = 0.25
+		mercenary_manpower = 0.25
 	}
 	
 	trigger = {
@@ -240,7 +240,7 @@ NNG_ideas = {
 	}
 
 	bonus = {
-		possible_mercenaries = 0.25
+		mercenary_manpower = 0.25
 	}
 	
 	trigger = {
