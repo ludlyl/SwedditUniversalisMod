@@ -39,6 +39,7 @@ SHE_ideas = {
 		ae_impact = -0.1
 	}
 }
+
 LNG_ideas = {
 	start = {
 		development_cost = -0.10
