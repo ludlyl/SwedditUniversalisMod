@@ -92,40 +92,7 @@ imperial_examination_reform = {
 }
 
 
-## Sweddit India nerfs, these overwrite existing reforms with nerfed values ##
-
-poligar_reform_sweddit = {
-	icon = "indian_crown"
-	allow_normal_conversion = yes
-	potential = {
-		technology_group = indian
-		OR = {
-			culture_group = dravidian
-			primary_culture = oriya
-			primary_culture = sinhala
-		}
-	}
-	modifiers = {
-		infantry_power = 0.1 # Dev cost removed here from S18 vote
-	}
-}
-
-permanent_marathas_council_reform = {
-	icon = "noble_indian"
-	allow_normal_conversion = yes
-	potential = {
-		has_estate = estate_maratha
-		technology_group = indian
-	}
-	modifiers = {
-		leader_land_shock = 1 # Voted in this nerf in S18 vote
-		# reduce noble loyalty and influence if has estate
-	}
-	custom_attributes = {
-		maratha_general_interaction = yes
-	}
-}
-
+#Sweddit change: Removed raid coast from pirate republic
 pirate_republic_reform = {
 	icon = "pirate_republic"
 	allow_normal_conversion = no
