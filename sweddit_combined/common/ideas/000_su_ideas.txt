@@ -39,6 +39,7 @@ SHE_ideas = {
 		ae_impact = -0.1
 	}
 }
+
 LNG_ideas = {
 	start = {
 		development_cost = -0.10
@@ -84,7 +85,7 @@ WUU_ideas = {
 	}
 
 	bonus = {
-		possible_mercenaries = 0.25
+		mercenary_manpower = 0.25
 	}
 	
 	trigger = {
@@ -240,7 +241,7 @@ NNG_ideas = {
 	}
 
 	bonus = {
-		possible_mercenaries = 0.25
+		mercenary_manpower = 0.25
 	}
 	
 	trigger = {

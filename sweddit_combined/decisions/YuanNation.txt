@@ -1,5 +1,6 @@
 country_decisions = {
-
+	# Sweddit change: Removed emperor of China requirement from forming Great Yuan
+	#                 Added effect where Great Yuan will turn into a rank 3 monarchy on formation
 	from_great_yuan = {
 		major = yes
 		potential = {
