@@ -9,4 +9,4 @@ tags={
 	"New Nations"
 }
 picture="sweddit_combined.png"
-supported_version="1.29.*.*"
+supported_version="1.30.*.*"
