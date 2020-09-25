@@ -43,6 +43,53 @@ confucian_state_reform = {
 	}
 }
 
+chinese_hegemon_republic_reform = {
+	icon = "soldiers_3"
+	allow_normal_conversion = yes
+	duration = 4
+	legacy_equivalent = oligarchic_republic
+	start_territory_to_estates = 0.5
+	potential = {
+		NOT = { tag = IMP }
+		culture_group = east_asian
+		religion = confucianism
+		total_development = 145
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		land_morale = 0.05
+		ae_impact = -0.10
+		global_trade_goods_size_modifier = 0.10
+		governing_capacity = 100
+		max_absolutism = -40
+	}
+}
+
+confucian_state_republic_reform = {
+	icon = "general_eastern_administrative"
+	allow_normal_conversion = yes
+	duration = 4
+	legacy_equivalent = oligarchic_republic
+	start_territory_to_estates = 0.5
+	potential = {
+		religion = confucianism 
+		NOT = {
+			AND = {
+				total_development = 145
+				culture_group = east_asian
+			}
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		land_morale = 0.05
+		global_trade_goods_size_modifier = 0.10
+		max_absolutism = -40
+	}
+}
+
 mandate_of_heaven_reform = {
 	icon = "celestial_empire"
 	allow_normal_conversion = yes

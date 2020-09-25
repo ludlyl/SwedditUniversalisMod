@@ -260,6 +260,9 @@ republic = {
 				protectorate_parliament_reform
 				prussian_republic_reform
 				united_cantons_reform
+				# Sweddit change: Added custom government reforms for China
+ 				chinese_hegemon_republic_reform
+				confucian_state_republic_reform
 			}
 		}
 		republican_virtues = {
@@ -478,6 +481,9 @@ theocracy = {
 				papacy_reform
 				holy_state_reform
 				united_cantons_reform
+				# Sweddit change: Added custom government reforms for China
+ 				chinese_hegemon_reform
+				confucian_state_reform
 			}
 		}
 		internal_vs_external_mission = {
