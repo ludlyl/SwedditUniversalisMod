@@ -117,6 +117,8 @@ country_decisions = {
 					has_reform = confucian_state_reform
 					has_reform = chinese_hegemon_reform
 					has_reform = mandate_of_heaven_reform
+					has_reform = chinese_hegemon_republic_reform
+					has_reform = confucian_state_republic_reform
 				}
 			}
 		}
