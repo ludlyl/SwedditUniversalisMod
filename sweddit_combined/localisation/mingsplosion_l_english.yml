@@ -78,3 +78,6 @@
  imperial_examination_reform_desc:0 "The Imperial Examination system has improved the bureaucratic performance of our nation substantially by only allowing proficient administrators"
  adopt_confucian_administration_title:0 "Adopt Confucian Administration"
  adopt_confucian_administration_desc:0 "Jiayou!"
+ confucian_theocracy:0 "Confucian Theocracy"
+ desc_confucian_theocracy:0 "Confucius say 'Man who make mistake in elevator, wrong on many levels'"
+ confucian_theocracy_tooltip:0 "Informative tooltip"
