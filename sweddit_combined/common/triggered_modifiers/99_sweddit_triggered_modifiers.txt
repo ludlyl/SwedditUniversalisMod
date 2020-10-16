@@ -1,0 +1,12 @@
+confucian_theocracy = {
+	potential = {
+		religion = confucianism
+	}
+	trigger = {
+		religion = confucianism
+        government = theocracy
+	}
+	
+    land_morale = 0.05
+    global_trade_goods_size_modifier = 0.10
+} 

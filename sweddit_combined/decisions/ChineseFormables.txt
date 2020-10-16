@@ -117,6 +117,8 @@ country_decisions = {
 					has_reform = confucian_state_reform
 					has_reform = chinese_hegemon_reform
 					has_reform = mandate_of_heaven_reform
+					has_reform = chinese_hegemon_republic_reform
+					has_reform = confucian_state_republic_reform
 				}
 			}
 		}
@@ -126,7 +128,20 @@ country_decisions = {
 			harmony = 75
 		}
 		effect = {
-			add_government_reform = confucian_state_reform
+			if = {
+				limit = {
+					OR = {
+						government = monarchy
+					}
+				}
+				add_government_reform = confucian_state_reform
+			}
+			if = {
+				limit = {
+					government = republic
+				}
+				add_government_reform = confucian_state_republic_reform
+			}
 		}
 		ai_will_do = {
 			factor = 1
