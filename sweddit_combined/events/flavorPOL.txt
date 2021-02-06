@@ -17,6 +17,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
+		NOT = {	num_of_estate_privileges = { estate = estate_nobles	value = 4 } }
 		OR = {
 			AND = {
 				tag = POL
@@ -194,6 +195,7 @@ country_event = {
 	
 	is_triggered_only = yes	
 	trigger = {
+		NOT = {	num_of_estate_privileges = { estate = estate_nobles	value = 4 } }
 		has_reform = elective_monarchy
 		NOT = { has_country_flag = pol_pact_conventa_flag }
 		OR = {
@@ -1665,12 +1667,15 @@ country_event = {
 	option = {
 		name = flavor_pol.18.b #Appoint a Local Noble.
 		ai_chance = { 
-			factor = 20
+			factor = 25
 		}
 		define_ruler = {
-			DIP = 4
-			ADM = 4
-			MIL = 4
+			DIP = 3
+			ADM = 3
+			MIL = 3
+			max_random_adm = 5
+			max_random_dip = 5
+			max_random_mil = 5
 			claim = 100
 			culture = polish
 		}
@@ -1678,14 +1683,14 @@ country_event = {
 			limit = {
 				has_states_general_mechanic = yes
 			}
-			change_statists_vs_orangists = 200
+			change_statists_vs_orangists = 1
 		}
 		if = {
 			limit = { NOT = {  has_global_flag = kazimierz_declined_polish_throne} }
 			LIT = {
 				add_opinion = {
-				who = ROOT
-				modifier = lit_denied_birthright
+					who = ROOT
+					modifier = lit_denied_birthright
 				}
 			}
 		}
@@ -1718,6 +1723,7 @@ country_event = {
 	}
 }
 
+
 # Become elective
 country_event = {
 	id = flavor_pol.20
@@ -1728,6 +1734,10 @@ country_event = {
 	
 	fire_only_once = yes
 	is_triggered_only = yes
+
+	trigger = {
+		NOT = {	num_of_estate_privileges = { estate = estate_nobles	value = 4 } }
+	}
 	
 	option = {
 		name = flavor_pol.20.a
