@@ -3,6 +3,7 @@ country_decisions = {
 	form_chinese_empire = {
 		major = yes
 		potential = {
+			NOT = { exists = IMP }
 			NOT = { has_country_flag = formed_chinese_empire }
 			normal_or_historical_nations = yes
 			OR = {
