@@ -3,6 +3,9 @@ estate_burghers_indebted_to_burghers = {
 	max_absolutism = -5
 	loyalty = 0.05
 	influence = 0.05
+	is_valid = {
+		is_bankrupt = no
+	}
 	can_select = { 
 		NOT = { has_estate_loan = 1 } # Added. Reason these exists when can_revoke already exists if because fix was added in middle of season
 	}
