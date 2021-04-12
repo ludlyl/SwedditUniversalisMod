@@ -52,6 +52,8 @@ monarchy = {
 				imperial_nobility_reform
 				# Sweddit change: Added custom government reforms to China
 				chinese_empire_reform
+				# Sweddit change: Added custom government reforms for colonizing
+				quest_for_new_world_gov_reform_sweddit
 			}
 		}
 		bureaucracy = {
@@ -64,6 +66,8 @@ monarchy = {
 				penal_colonies_reform
 				liberte_reform
 				fraternite_reform
+				# Sweddit change: Added custom government reforms for colonizing
+				colonist_gov_reform_sweddit
 			}
 		}
 		growth_of_administration = {
