@@ -10,6 +10,7 @@ country_decisions = {
 		}
 		effect = {
 			add_army_professionalism = -0.05
+			add_yearly_manpower = 2
 			add_country_modifier = {
 				name = sweddit_slacken_modifier
 				duration = 1825
