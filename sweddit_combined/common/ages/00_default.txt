@@ -195,8 +195,9 @@ age_of_discovery = {
 			allow = {
 				tag = POR
 			}
+			# Sweddit change: Changed Portuguese age ability from +50 yearly settlers to +20% trade efficiency
 			modifier = {
-				global_colonial_growth = 50
+				trade_efficiency = 0.20
 			}
 			ai_will_do = {
 				factor = 100
