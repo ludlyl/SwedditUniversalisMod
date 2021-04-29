@@ -5,4 +5,3 @@ religion = buddhism
 technology_group = chinese
 capital = 661	# Dali
 
-
