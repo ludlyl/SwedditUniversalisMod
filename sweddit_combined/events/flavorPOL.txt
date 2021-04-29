@@ -1723,7 +1723,6 @@ country_event = {
 	}
 }
 
-
 # Become elective
 country_event = {
 	id = flavor_pol.20
