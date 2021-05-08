@@ -57,6 +57,7 @@ country_decisions = {
 			owns_core_province = 730		#Girin
 			730 = {							#Girin
 				is_state = yes
+			}
 			custom_trigger_tooltip = {
 				tooltip = manchu_manchuria_decision.tooltip
 				num_of_owned_provinces_with = {
