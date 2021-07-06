@@ -195,7 +195,7 @@ shipyard = {
 	ai_will_do = {
 		factor = 1
 		modifier = {
-			factor = 105 # Little above build cost
+			factor = 1.5 # bit more likely if close to the naval force limit
 			FROM = { navy_size_percentage = 0.95 }
 		}
 		modifier = {
@@ -356,7 +356,7 @@ regimental_camp = {
 	ai_will_do = {
 		factor = 1
 		modifier = {
-			factor = 215 # Little above build cost
+			factor = 1.5 # more likely if we have an army close to the force limit
 			FROM = { army_size_percentage = 0.95 }
 		}
 		modifier = {
@@ -575,7 +575,7 @@ grand_shipyard = {
 	ai_will_do = {
 		factor = 1
 		modifier = {
-			factor = 320 # Little above build cost
+			factor = 1.5 # bit more likely if close to the force limit
 			FROM = { navy_size_percentage = 0.95 }
 		}
 		modifier = {
@@ -829,7 +829,7 @@ conscription_center = {
 	ai_will_do = {
 		factor = 1
 		modifier = {
-			factor = 435 # Little above build cost
+			factor = 1.5 # more likely if we have an army close to the force limit
 			FROM = { army_size_percentage = 0.95 }
 		}
 		modifier = {
@@ -907,7 +907,7 @@ wharf = {
 	onmap = yes
 
 	ai_will_do = {
-		factor = 1750
+		factor = 1
 
 		modifier = {
 			factor = 0.4
