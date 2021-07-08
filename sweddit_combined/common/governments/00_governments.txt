@@ -258,6 +258,7 @@ republic = {
 				veche_republic
 				american_republic
 				federal_republic
+				colonial_government
 				crown_colony_government
 				private_enterprise_colony_government
 				self_governing_colony_government
@@ -735,7 +736,7 @@ pre_dharma_mapping = {
 	}
 	trading_city = {
 		government = republic
-		legacy_government = imperial_city_legacy
+		legacy_government = imperial_city
 	}
 	ambrosian_republic = {
 		government = republic
