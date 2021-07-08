@@ -70,7 +70,7 @@
 	- Disgusting solution, don't @ me
 
 #### War Score
-- Increase **war score** gained from **fulfil war goal** to **35%**
+- Increase **war score** gained from **fulfill war goal** to **35%**
 
 #### ????
 - **COUNTRIES_GETTING_SCORE** changed from **10** to **0**, no clue what this means
