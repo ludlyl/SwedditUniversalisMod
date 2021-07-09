@@ -167,7 +167,9 @@ cb_trade_war_triggered = {
 		po_release_annexed
 		po_return_cores
 		po_become_vassal
+		po_subjugate_vassal
 		po_become_tributary_state
+		po_subjugate_tributary_state
 		po_form_personal_union
 		po_transfer_vassals
 	}
@@ -188,8 +190,10 @@ cb_trade_conflict = {
 		po_release_annexed
 		po_return_cores
 		po_become_vassal
+		po_subjugate_vassal
 		po_form_personal_union
 		po_become_tributary_state
+		po_subjugate_tributary_state
 		po_transfer_vassals
 	}
 }
@@ -212,7 +216,9 @@ cb_trade_league_conflict = {
 		po_release_annexed
 		po_return_cores
 		po_become_vassal
+		po_subjugate_vassal
 		po_become_tributary_state
+		po_subjugate_tributary_state
 		po_form_personal_union
 		po_transfer_vassals
 	}
@@ -845,7 +851,9 @@ cb_trade_war = {
 		po_release_annexed
 		po_return_cores
 		po_become_vassal
+		po_subjugate_vassal
 		po_become_tributary_state
+		po_subjugate_tributary_state
 		po_form_personal_union
 		po_transfer_vassals
 	}
@@ -870,7 +878,9 @@ cb_trade_league_dispute = {
 		po_release_annexed
 		po_return_cores
 		po_become_vassal
+		po_subjugate_vassal
 		po_become_tributary_state
+		po_subjugate_tributary_state
 		po_form_personal_union
 		po_transfer_vassals
 	}
@@ -1161,7 +1171,9 @@ cb_humiliate_rotw = {
 		po_release_annexed
 		po_return_cores
 		po_become_vassal
+		po_subjugate_vassal
 		po_become_tributary_state
+		po_subjugate_tributary_state
 		po_form_personal_union
 		po_transfer_vassals
 	}
@@ -1244,6 +1256,16 @@ cb_force_tributary = {
 		FROM = { is_subject = no }
 		is_neighbor_of = FROM
 	}
+	
+	war_goal = take_capital_force_tributary
+}
+
+cb_force_tributary_mission = {
+
+	valid_for_subject = no
+
+	is_triggered_only = yes
+	months = 300
 	
 	war_goal = take_capital_force_tributary
 }
@@ -1411,11 +1433,20 @@ cb_force_migration = {
 
 	prerequisites = {
 		has_dlc = "Conquest of Paradise"
-		is_native_tribe = yes
+		OR = {
+			is_native_tribe = yes
+			is_migratory_tribe = yes
+		}
 		FROM = {
 			is_migratory_tribe = yes
-			capital_scope = {
-				tribal_land_of = ROOT
+			OR = {
+				AND = {
+					is_native_tribe = yes
+					capital_scope = {
+						tribal_land_of = ROOT
+					}
+				}
+				is_native_tribe = no
 			}
 		}
 	}
@@ -1449,6 +1480,13 @@ cb_native_american_tribal_feud = {
 		}
 	}
 	war_goal = take_native_american_land
+
+	attacker_disabled_po = {
+		po_become_vassal
+		po_subjugate_vassal
+		po_become_tributary_state
+		po_subjugate_tributary_state
+	}
 }
 
 # Burn European Colonies
