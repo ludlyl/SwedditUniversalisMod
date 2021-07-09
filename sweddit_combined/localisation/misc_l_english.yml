@@ -9,8 +9,3 @@
  desc_sweddit_slacken_modifier:0 "These Danes are insufferable, they're hurting morale!"
  sweddit_slacken_title:0 "Slacken Recruitment"
  sweddit_slacken_desc:0 "We need troops desperately, we might have to let the Danes join the army!"
-# Colonial gov reforms
- quest_for_new_world_gov_reform_sweddit:0 "Quest for New World"
- quest_for_new_world_gov_reform_sweddit_desc:0 "We're off to find an eastern route to India!"
- colonist_gov_reform_sweddit:0 "Colonial Charters"
- colonist_gov_reform_sweddit_desc:0 "It's not India, but it'll do!"
