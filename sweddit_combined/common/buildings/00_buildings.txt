@@ -44,7 +44,7 @@ workshop = {
 	cost = 100
 	time = 12
 	modifier = {
-		local_production_efficiency = 0.3
+		local_production_efficiency = 0.5
 	}
 
 	allow_in_gold_provinces = no
@@ -125,7 +125,7 @@ barracks = {
 	cost = 100
 	time = 12
 	modifier = {
-		local_manpower_modifier = 0.3
+		local_manpower_modifier = 0.5
 	}
 	on_built = {
 		if = {
@@ -195,7 +195,7 @@ shipyard = {
 	ai_will_do = {
 		factor = 1
 		modifier = {
-			factor = 105 # Little above build cost
+			factor = 1.5 # bit more likely if close to the naval force limit
 			FROM = { navy_size_percentage = 0.95 }
 		}
 		modifier = {
@@ -276,7 +276,7 @@ courthouse = {
 
 	ai_will_do = {
 		factor = 1
-				modifier = {
+		modifier = {
 			factor = 2
 			FROM = { governing_capacity_percentage = 0.8 }
 		}
@@ -414,7 +414,7 @@ regimental_camp = {
 	ai_will_do = {
 		factor = 1
 		modifier = {
-			factor = 215 # Little above build cost
+			factor = 1.5 # more likely if we have an army close to the force limit
 			FROM = { army_size_percentage = 0.95 }
 		}
 		modifier = {
@@ -564,6 +564,7 @@ university = {
 	time = 12
 	modifier = {
 		local_development_cost = -0.20
+		allowed_num_of_buildings = 1
 	}
 
 	ai_will_do = {
@@ -673,7 +674,7 @@ training_fields = {
 #	}
 
 	modifier = {
-		local_manpower_modifier = 0.5
+		local_manpower_modifier = 1
 	}
 	
 	on_built = {
@@ -775,7 +776,7 @@ counting_house = {
 
 	make_obsolete = workshop
 	modifier = {
-		local_production_efficiency = 0.5
+		local_production_efficiency = 1
 	}
 
 	allow_in_gold_provinces = no
@@ -802,7 +803,7 @@ town_hall = {
 
 	ai_will_do = {
 		factor = 1
-				modifier = {
+		modifier = {
 			factor = 10
 			has_building = courthouse
 		}
@@ -1012,7 +1013,7 @@ manufactory = {
 	cost = 500
 	time = 60
 	modifier = {
-		trade_goods_size = 0.6
+		trade_goods_size = 1.0
 	}
 }
 
@@ -1027,7 +1028,7 @@ wharf = {
 	onmap = yes
 
 	ai_will_do = {
-		factor = 1750
+		factor = 1
 
 		modifier = {
 			factor = 0.4
@@ -1191,10 +1192,10 @@ soldier_households = {
 	}
 
 	modifier = {
-		local_manpower = 0.4
+		local_manpower = 0.75
 	}
 	bonus_modifier = {
-		local_manpower = 0.02
+		local_manpower = 0.75
 	}
 	onmap = no
 	show_separate = yes # Means as a manufactory it will be shown according to the old way

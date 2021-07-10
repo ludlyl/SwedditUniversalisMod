@@ -199,35 +199,5 @@ pirate_republic_reform = {
 		locked_government_type = yes
 		force_admiral_leader = yes
 	}
-}
-
-## Sweddit Colonial reforms voted in s27 ##
-
-quest_for_new_world_gov_reform_sweddit = {
-	icon = "merchant_ship"
-	allow_normal_conversion = yes
-	potential = {
-		total_development = 500
-		capital_scope = {
-			superregion = europe_superregion
-		}
-	}
-	modifiers = {
-		range = 0.5
-		may_explore = yes
-	}
-}
-
-colonist_gov_reform_sweddit = {
-	icon = "merchant_ship"
-	allow_normal_conversion = yes
-	potential = {
-		total_development = 500
-		capital_scope = {
-			superregion = europe_superregion
-		}
-	}
-	modifiers = {
-		colonists = 1
-	}
+	
 }

@@ -55,8 +55,6 @@ monarchy = {
 				uparaja_reform
 				# Sweddit change: Added custom government reforms to China
 				chinese_empire_reform
-				# Sweddit change: Added custom government reforms for colonizing
-				quest_for_new_world_gov_reform_sweddit
 			}
 		}
 		bureaucracy = {
@@ -71,8 +69,6 @@ monarchy = {
 				fraternite_reform
 				examination_system_reform
 				corvee_reform
-				# Sweddit change: Added custom government reforms for colonizing
-				colonist_gov_reform_sweddit
 			}
 		}
 		growth_of_administration = {

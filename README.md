@@ -38,7 +38,7 @@
 - Removed opinion requirement for forming alliance
 
 #### Buildings
-- Nerfed almost all building, can't be bothered to write all the nerfs, look it up
+- Nerfed force limit buildings to 50% of vanilla
 
 #### Decisions
 - Changed  **Form Manchu** decision, now only requires **>499 dev** but does not grant **empire rank government**
@@ -53,10 +53,6 @@
 
 #### Government Reforms
 - Removed **Raid Coast** from **Pirate Republics**
-- Added **Tier 2 government reform** which is only available to countries in **European super region** with **>499 dev**, grants **+50% colonial range** and **Quest for New World**
-	- *Currently broken, not possible to grant **Quest for New World** from government reforms*
-- Added **Tier 3 government reform** which is only available to countries in **European super region** with **>499 dev**, grants **+1 colonist**
-*The last two reform changes will be removed from the mod before S28 unless vote for keeping them passes, tied to the rule banning New World exodus*
 
 #### Slacken Manpower
 - Regular **Slacken Manpower** disabled, decision added which does the same thing but on a **5 year cooldown**
