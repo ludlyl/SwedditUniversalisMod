@@ -1,3 +1,0 @@
-# This is needed to keep track of the 5 year slacken recruitment cooldown
-sweddit_slacken_modifier = {
-}
