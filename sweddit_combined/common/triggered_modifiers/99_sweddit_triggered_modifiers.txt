@@ -1,3 +1,14 @@
+increased_naval_engagement_width = {
+	potential = {
+		always = yes
+	}
+	trigger = {
+		always = yes
+	}
+	
+    global_naval_engagement_modifier = 100
+}
+
 confucian_theocracy = {
 	potential = {
 		religion = confucianism
@@ -21,7 +32,6 @@ rapid_collapse_of_society_2 = {
 				continent = new_world
 			}
 		}
-		
 	}
 	trigger = {
 		NOT = { has_institution = feudalism }

@@ -195,9 +195,8 @@ age_of_discovery = {
 			allow = {
 				tag = POR
 			}
-			# Sweddit change: Changed Portuguese age ability from +50 yearly settlers to +20% trade efficiency
 			modifier = {
-				trade_efficiency = 0.20
+				global_settler_increase = 50
 			}
 			ai_will_do = {
 				factor = 100
@@ -732,9 +731,10 @@ age_of_revolutions = {
 				factor = 10
 			}
 		}
+		# Sweddit change: Changed global naval engagment to heavy ship combat ability
 		ab_more_ships_can_fire = {
 			modifier = {
-				global_naval_engagement_modifier = 0.20
+				heavy_ship_power = 0.1
 			}
 			ai_will_do = {
 				factor = 10
