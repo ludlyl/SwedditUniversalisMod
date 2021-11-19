@@ -1,14 +1,3 @@
-increased_naval_engagement_width = {
-	potential = {
-		always = yes
-	}
-	trigger = {
-		always = yes
-	}
-	
-    global_naval_engagement_modifier = 100
-}
-
 confucian_theocracy = {
 	potential = {
 		religion = confucianism
