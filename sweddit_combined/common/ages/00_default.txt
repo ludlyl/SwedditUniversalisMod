@@ -63,8 +63,10 @@ age_of_discovery = {
 			custom_trigger_tooltip = {
 				tooltip = obj_30_development_city_tooltip
 				any_owned_province = {
-					is_core = ROOT
-					controlled_by = owner
+					exclude_from_progress = {
+						is_core = ROOT
+						controlled_by = owner
+					}
 					development_discounting_tribal = 30
 				}
 			}
@@ -441,7 +443,6 @@ age_of_reformation = {
 		}
 	
 	}
-	
 }
 
 
@@ -731,10 +732,9 @@ age_of_revolutions = {
 				factor = 10
 			}
 		}
-		# Sweddit change: Changed global naval engagment to heavy ship combat ability
 		ab_more_ships_can_fire = {
 			modifier = {
-				heavy_ship_power = 0.1
+				global_naval_engagement_modifier = 0.20
 			}
 			ai_will_do = {
 				factor = 10

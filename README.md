@@ -24,26 +24,6 @@
 #### Wargoals
 - Changed **Unify China** CB. Now only available **before 1550** to countries with **Chinese culture group primary culture** or **Manchu tag** or **Qing tag**. Applies to all provinces within **China super region**. Grants **75% aggressive expansion**, **150% prestige** and **100% peace cost**
 
-## Naval combat changes
-
-#### Ages
-- Age of Revolutions **+20% global naval engagement width** age ability changed to **+20% trade efficiency**
-
-#### Hegemon
-- Naval hegemon now grant **+10% heavy ship combat ability** instead of **+20% global naval engagement width**
-
-#### Ideas
-- The exploration idea group idea which grants **+10% global naval engagement width** now gives **-20% shipbuilding time**
-- The Danish idea which grants **+10% global naval engagement width** now gives **+10% land morale**
-- The Piratical idea which grants **+20% global naval engagement width** now gives **+33% privateer efficiency**
-
-#### Policies
-- The **Skilled Cartographers** policy now gives **+10% light ship combat ability**
-- The **The Maritime Intelligencer Unit** policy now gives **+2 blockade impact on siege**
-
-#### Triggered modifier
-- Added triggered modifier which is always true and grant **+10000% global naval engagement width**
-
 ## Misc changes
 
 #### Ages
@@ -74,12 +54,11 @@
 #### Events
 - Changed **Polish-Lithuanian Personal Union** events so that **Lithuania** gets a choice in the establishment of the union
 
-#### Government Reforms
-- Removed **Raid Coast** from **Pirate Republics**
+#### Rivals
+- Diplo cost and cooldown of **changing rivals** removed
 
 #### Static Modifiers
 - **100% Horde Unity** now grants **+100% reform progress**, modifier relates linearly to percentage
-- Removed the **arid** and **tropical** province modifiers
 
 ####  Triggered Modifiers
 - **Rapid Collapse of Society 2** modifier created which negates the original **Rapid Collapse of Society**

@@ -143,7 +143,7 @@ country_decisions = {
 		ai_importance = 500		
 	}
 
-	# Sweddit change: Reduced development requirement from 1000 to 500
+	# Sweddit change: Reduced development requirement from 1000 to 500 and no longer grants empire rank government
 	form_manchu_dynasty = {
 		major = yes
 		potential = {
