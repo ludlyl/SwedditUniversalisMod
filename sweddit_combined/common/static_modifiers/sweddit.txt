@@ -1,3 +1,14 @@
+# At 100% over capacity, this modifier will be fully used
+over_governing_capacity_modifier = {
+	stability_cost_modifier = 1.0
+	ae_impact = 0.5
+	improve_relation_modifier = -0.5
+	core_creation = 0.2
+	advisor_cost = 1.0
+	monthly_militarized_society = -1.0
+	development_cost = 2
+}
+
 # Faster government reform progress gain when at 100% horde unity
 horde_unity = {
 	global_unrest = -4
