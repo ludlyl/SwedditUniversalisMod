@@ -41,7 +41,7 @@ rapid_collapse_of_society_2 = {
 	land_morale = 0.2
 }
 
-teleporting_diplomatis = {
+teleporting_diplomats = {
 	potential = {
 		always = yes
 	}
