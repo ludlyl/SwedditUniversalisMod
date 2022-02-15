@@ -40,3 +40,14 @@ rapid_collapse_of_society_2 = {
 	discipline = 0.1
 	land_morale = 0.2
 }
+
+teleporting_diplomatis = {
+	potential = {
+		always = yes
+	}
+	trigger = {
+		always = yes
+	}
+	
+	envoy_travel_time = -1
+}
