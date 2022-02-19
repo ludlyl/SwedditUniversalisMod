@@ -243,6 +243,7 @@ shipyard = {
 		has_port = yes
 	}
 	modifier = {
+		# Sweddit change: Halved force limit contribution
 		naval_forcelimit = 1
 		ship_recruit_speed = -0.25
 		local_ship_repair = 0.25
@@ -482,6 +483,7 @@ regimental_camp = {
 	cost = 200
 	time = 12
 	modifier = {
+		# Sweddit change: Halved force limit contribution
 		land_forcelimit = 0.5
 	}
 
@@ -789,6 +791,7 @@ grand_shipyard = {
 		has_port = yes
 	}
 	modifier = {
+		# Sweddit change: Halved force limit contribution
 		naval_forcelimit = 2
 		ship_recruit_speed = -0.50
 		local_ship_repair = 0.50
@@ -1229,6 +1232,7 @@ conscription_center = {
 #	}
 
 	modifier = {
+		# Sweddit change: Halved force limit contribution
 		land_forcelimit = 1
 	}
 	on_built = {

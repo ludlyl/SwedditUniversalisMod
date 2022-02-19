@@ -1396,7 +1396,7 @@ country_event = {
 			}
 			remove_government_reform = elective_monarchy
 			#set_legacy_government = administrative_monarchy
-			remove_heir = yes
+			remove_heir = {}
 			add_absolutism = 10
 		}
 	}
@@ -1670,9 +1670,9 @@ country_event = {
 			factor = 25
 		}
 		define_ruler = {
-			DIP = 3
-			ADM = 3
-			MIL = 3
+			change_dip = 3
+			change_adm = 3
+			change_mil = 3
 			max_random_adm = 5
 			max_random_dip = 5
 			max_random_mil = 5
@@ -1705,9 +1705,9 @@ country_event = {
 			id = flavor_pol.20
 		}
 		define_ruler = {
-			DIP = 4
-			ADM = 4
-			MIL = 4
+			change_dip = 4
+			change_adm = 4
+			change_mil = 4
 			claim = 100
 			culture = polish
 		}
@@ -1715,8 +1715,8 @@ country_event = {
 			limit = { NOT = {  has_global_flag = kazimierz_declined_polish_throne} }
 			LIT = {
 				add_opinion = {
-				who = ROOT
-				modifier = lit_denied_birthright
+					who = ROOT
+					modifier = lit_denied_birthright
 				}
 			}
 		}

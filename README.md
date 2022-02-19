@@ -54,13 +54,21 @@
 #### Events
 - Changed **Polish-Lithuanian Personal Union** events so that **Lithuania** gets a choice in the establishment of the union
 
+#### Government reforms
+- Changed so that **Merchant republics** have access to all estates except **Nobility**, **Marathas** and **Rajputs**
+
+#### Ideas
+- **Aristocratic ideas** changed, replaced **+1 diplomat** with **+50% cavalry to infantry ratio**
+
 #### Rivals
 - Diplo cost and cooldown of **changing rivals** removed
 
 #### Static Modifiers
+- **100% Over Government Capacity** now grants **+200% dev cost**, modifier relates linearly to percentage
 - **100% Horde Unity** now grants **+100% reform progress**, modifier relates linearly to percentage
 
 ####  Triggered Modifiers
+- All countries get **--100% envoy travel time**
 - **Rapid Collapse of Society 2** modifier created which negates the original **Rapid Collapse of Society**
 	- Disgusting solution, don't @ me
 
