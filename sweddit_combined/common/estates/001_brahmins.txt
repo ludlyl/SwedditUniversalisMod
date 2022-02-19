@@ -12,6 +12,7 @@ estate_brahmins = {
 			}
 			religion = hinduism
 		}
+		# Sweddit change: Allow merchant republics to have this estate
 		NOT = { has_reform = pirate_republic_reform }
 		NOT = { has_reform = siberian_tribe }
 		NOT = { has_reform = cossacks_reform }

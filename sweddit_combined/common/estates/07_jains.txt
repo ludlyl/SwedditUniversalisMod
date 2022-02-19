@@ -4,6 +4,7 @@ estate_jains = {
 	# If true, country will get estate
 	
 	trigger = {	
+		# Sweddit change: Allow merchant republics to have this estate
 		has_dlc = "Dharma"
 		technology_group = indian
 		NOT = { is_revolutionary_republic_trigger = yes }

@@ -4,6 +4,7 @@ estate_vaisyas = {
 	# If true, country will get estate
 	#Replaces Burghers
 	trigger = {	
+		# Sweddit change: Allow merchant republics to have this estate
 		has_dlc = "Dharma"
 		technology_group = indian
 		religion = hinduism

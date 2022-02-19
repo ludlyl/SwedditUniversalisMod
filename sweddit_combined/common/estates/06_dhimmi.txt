@@ -16,6 +16,7 @@ estate_dhimmi = {
 
 	# If true, country will get estate
 	trigger = {
+		# Sweddit change: Allow merchant republics to have this estate
 		has_dlc = "The Cossacks"
 		NOT = { has_estate = estate_brahmins }
 		NOT = { is_revolutionary_republic_trigger = yes }
