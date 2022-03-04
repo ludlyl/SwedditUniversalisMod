@@ -18,7 +18,10 @@ estate_dhimmi = {
 	trigger = {
 		# Sweddit change: Allow merchant republics to have this estate
 		has_dlc = "The Cossacks"
-		NOT = { has_estate = estate_brahmins }
+		OR = {
+			NOT = { has_estate = estate_brahmins }
+			has_country_flag = gained_dhimmi_estate
+		}
 		NOT = { is_revolutionary_republic_trigger = yes }
 		NOT = { government = native }
 		NOT = { has_reform = siberian_tribe }
@@ -124,6 +127,7 @@ estate_dhimmi = {
 		estate_dhimmi_manpower
 		estate_dhimmi_tolerance
 		estate_dhimmi_guarantee_of_traditions
+		estate_dhimmi_grant_liberties
 	}
 
 	agendas = {

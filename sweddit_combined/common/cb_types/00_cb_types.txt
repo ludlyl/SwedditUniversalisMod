@@ -40,6 +40,33 @@ cb_restore_personal_union = {
 	war_goal = take_capital_personal_union
 }
 
+#Hundred Years War
+cb_hundred_years_war = {
+	valid_for_subject = no
+
+	is_triggered_only = yes
+	months = 240
+
+	prerequisites = {
+		OR = {
+			government = monarchy
+			has_reform = dutch_republic
+		}
+		is_revolutionary = no
+		FROM = {
+			OR = {
+				government = monarchy
+				has_reform = ambrosian_republic
+				# has_reform = military_dictatorship_reform
+				has_country_flag = neapolitan_republic
+			}
+			is_subject = no
+		}
+	}
+
+	war_goal = take_capital_hundred_years_war
+}
+
 # Defected province
 cb_defection = {
 	valid_for_subject = no
@@ -1264,6 +1291,25 @@ cb_force_tributary = {
 		is_emperor_of_china = yes
 		FROM = { is_subject = no }
 		is_neighbor_of = FROM
+		OR = {
+			ai = no
+			AND = {
+				OR = {
+					NOT = { ROOT = { capital_scope = { superregion = china_superregion } } }
+					AND = {
+						ROOT = { capital_scope = { superregion = china_superregion } }
+						NOT = { FROM = { any_owned_province = { superregion = china_superregion } } }
+					}
+				}
+				OR = {
+					NOT = { ROOT = { capital_scope = { region = japan_region } } }
+					AND = {
+						ROOT = { capital_scope = { region = japan_region } }
+						NOT = { FROM = { any_owned_province = { region = japan_region } } }
+					}
+				}
+			}
+		}
 	}
 	
 	war_goal = take_capital_force_tributary
