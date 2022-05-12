@@ -32,10 +32,11 @@
 #### Alliances
 - Removed opinion requirement for forming alliance
 
-#### Army professionalism
+#### Land warfare modifiers
 - Drilling now generates **5% yearly army professionalism** instead of **1% yearly army professionalism**
 - Recruiting generals now grants **5% army professionalism** instead of **1% army professionalism**
 - Slacken recruitment now costs **25% army professionalism** instead of **5% army professionalism**
+- Assault fort now costs **50 military points** instead of **5 military points**
 
 #### Buildings
 - Nerfed force limit buildings to 50% of vanilla
