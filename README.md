@@ -55,9 +55,6 @@
 #### Events
 - Changed **Polish-Lithuanian Personal Union** events so that **Lithuania** gets a choice in the establishment of the union
 
-#### Government reforms
-- Changed so that **Merchant republics** have access to all estates except **Nobility**, **Marathas** and **Rajputs**
-
 #### Ideas
 - **Aristocratic ideas** changed, replaced **+1 diplomat** with **+50% cavalry to infantry ratio**
 
