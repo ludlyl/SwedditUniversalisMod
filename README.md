@@ -59,7 +59,6 @@
 - Diplo cost and cooldown of **changing rivals** removed
 
 #### Static Modifiers
-- **100% Over Government Capacity** now grants **+200% dev cost**, modifier relates linearly to percentage
 - **100% Horde Unity** now grants **+100% reform progress**, modifier relates linearly to percentage
 
 ####  Triggered Modifiers
