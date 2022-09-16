@@ -38,9 +38,6 @@
 - Slacken recruitment now costs **25% army professionalism** instead of **5% army professionalism**
 - Assault fort now costs **50 military points** instead of **5 military points**
 
-#### Buildings
-- Nerfed force limit buildings to 50% of vanilla
-
 #### Decisions
 - Changed  **Form Manchu** decision, now only requires **>499 dev** but does not grant **empire rank government**
 - Changed  **Form Yuan** decision, now converts country to **Monarchy** and grants **empire rank government**
