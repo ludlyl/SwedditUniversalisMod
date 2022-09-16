@@ -53,6 +53,7 @@
 - Changed **Polish-Lithuanian Personal Union** events so that **Lithuania** gets a choice in the establishment of the union
 
 #### Ideas
+- Removed **Naval ideas**
 - **Aristocratic ideas** changed, replaced **+1 diplomat** with **+50% cavalry to infantry ratio**
 
 #### Rivals
