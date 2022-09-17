@@ -42,6 +42,7 @@
 
 #### Estate Privileges
 - Nerfed **Loans from Burghers/Jains** estate privilege, can no longer be taken while still having the low interest loans
+- Nerfed **Maratha Military Leadership** estate privilege, from **10% discipline** to **5% discipline**
 
 #### Events
 - Changed **Polish-Lithuanian Personal Union** events so that **Lithuania** gets a choice in the establishment of the union
