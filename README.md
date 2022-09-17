@@ -32,12 +32,6 @@
 #### Alliances
 - Removed opinion requirement for forming alliance
 
-#### Land warfare modifiers
-- Drilling now generates **5% yearly army professionalism** instead of **1% yearly army professionalism**
-- Recruiting generals now grants **5% army professionalism** instead of **1% army professionalism**
-- Slacken recruitment now costs **25% army professionalism** instead of **5% army professionalism**
-- Assault fort now costs **50 military points** instead of **5 military points**
-
 #### Decisions
 - Changed  **Form Manchu** decision, now only requires **>499 dev** but does not grant **empire rank government**
 - Changed  **Form Yuan** decision, now converts country to **Monarchy** and grants **empire rank government**
@@ -56,8 +50,20 @@
 - Removed **Naval ideas**
 - **Aristocratic ideas** changed, replaced **+1 diplomat** with **+50% cavalry to infantry ratio**
 
+#### Land warfare modifiers
+- Drilling now generates **5% yearly army professionalism** instead of **1% yearly army professionalism**
+- Recruiting generals now grants **5% army professionalism** instead of **1% army professionalism**
+- Slacken recruitment now costs **25% army professionalism** instead of **5% army professionalism**
+- Assault fort now costs **50 military points** instead of **5 military points**
+
+#### National Focus
+- Changed base national focus cooldown from **25** years to **15** years
+
 #### Rivals
 - Diplo cost and cooldown of **changing rivals** removed
+
+#### Score
+- **COUNTRIES_GETTING_SCORE** changed from **10** to **0**. I.e. removed score from the game.
 
 #### Static Modifiers
 - **100% Horde Unity** now grants **+100% reform progress**, modifier relates linearly to percentage
@@ -69,6 +75,3 @@
 
 #### War Score
 - Increase **war score** gained from **fulfill war goal** to **35%**
-
-#### ????
-- **COUNTRIES_GETTING_SCORE** changed from **10** to **0**, no clue what this means
