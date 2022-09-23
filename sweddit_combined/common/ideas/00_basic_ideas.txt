@@ -42,7 +42,7 @@ aristocracy_ideas = {
 	# Sweddit change: Switched +1 diplomats to +50% cav to inf ratio
 	international_nobility = {
 		cav_to_inf_ratio = 0.5
-		free_leader_pool = 1
+		general_cost = -0.25
 	}
 noble_resilience = {
 		mercenary_manpower = 0.25
