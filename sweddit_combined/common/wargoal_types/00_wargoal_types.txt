@@ -2332,7 +2332,6 @@ superiority_religious_league = {
 	war_name = RELIGIOUS_LEAGUE_WAR_NAME
 }
 
-# Sweddit change: Nerfed "Unify China" CB
 superiority_chinese_unification = {
 	type = superiority
 	
