@@ -7,3 +7,5 @@ NDefines.NCountry.PS_ASSAULT = 50
 
 NDefines.NDiplomacy.CHANGE_RIVAL_YEARS = 0
 NDefines.NCountry.PS_REPLACE_RIVAL = 0
+
+NDefines.NCountry.NAT_FOCUS_YEARS = 15

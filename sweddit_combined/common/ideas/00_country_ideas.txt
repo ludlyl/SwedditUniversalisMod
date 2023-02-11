@@ -1453,6 +1453,7 @@ POL_ideas = {
 		infantry_power = 0.1
 	}
 	winged_hussars = {
+		# Sweddit change: Reduced cavalry combat ability
 		cavalry_power = 0.2
 		can_recruit_hussars = yes
 	}

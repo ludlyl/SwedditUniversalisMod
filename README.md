@@ -32,15 +32,6 @@
 #### Alliances
 - Removed opinion requirement for forming alliance
 
-#### Land warfare modifiers
-- Drilling now generates **5% yearly army professionalism** instead of **1% yearly army professionalism**
-- Recruiting generals now grants **5% army professionalism** instead of **1% army professionalism**
-- Slacken recruitment now costs **25% army professionalism** instead of **5% army professionalism**
-- Assault fort now costs **50 military points** instead of **5 military points**
-
-#### Buildings
-- Nerfed force limit buildings to 50% of vanilla
-
 #### Decisions
 - Changed  **Form Manchu** decision, now only requires **>499 dev** but does not grant **empire rank government**
 - Changed  **Form Yuan** decision, now converts country to **Monarchy** and grants **empire rank government**
@@ -51,18 +42,35 @@
 
 #### Estate Privileges
 - Nerfed **Loans from Burghers/Jains** estate privilege, can no longer be taken while still having the low interest loans
+- Nerfed **Maratha Military Leadership** estate privilege, from **10% discipline** to **5% discipline**
 
 #### Events
 - Changed **Polish-Lithuanian Personal Union** events so that **Lithuania** gets a choice in the establishment of the union
 
 #### Ideas
+- Removed **Naval ideas**
 - **Aristocratic ideas** changed, replaced **+1 diplomat** with **+50% cavalry to infantry ratio**
+- **Polish ideas** nerfed, reduced **cavalry combat ability** from **30%** to **20%**
+
+#### Land warfare modifiers
+- Drilling now generates **5% yearly army professionalism** instead of **1% yearly army professionalism**
+- Recruiting generals now grants **5% army professionalism** instead of **1% army professionalism**
+- Slacken recruitment now costs **25% army professionalism** instead of **5% army professionalism**
+- Assault fort now costs **50 military points** instead of **5 military points**
+
+#### National Focus
+- Changed base national focus cooldown from **25** years to **15** years
 
 #### Rivals
 - Diplo cost and cooldown of **changing rivals** removed
 
+#### Score
+- **COUNTRIES_GETTING_SCORE** changed from **10** to **0**. I.e. removed score from the game.
+
+#### State Edicts
+- Removed **encourage development** state edict
+
 #### Static Modifiers
-- **100% Over Government Capacity** now grants **+200% dev cost**, modifier relates linearly to percentage
 - **100% Horde Unity** now grants **+100% reform progress**, modifier relates linearly to percentage
 
 ####  Triggered Modifiers
@@ -72,6 +80,3 @@
 
 #### War Score
 - Increase **war score** gained from **fulfill war goal** to **35%**
-
-#### ????
-- **COUNTRIES_GETTING_SCORE** changed from **10** to **0**, no clue what this means
