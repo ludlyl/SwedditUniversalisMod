@@ -50,6 +50,7 @@
 #### Ideas
 - Removed **Naval ideas**
 - **Aristocratic ideas** changed, replaced **+1 diplomat** with **+50% cavalry to infantry ratio**
+- **Polish ideas** nerfed, reduced **cavalry combat ability** from **30%** to **20%**
 
 #### Land warfare modifiers
 - Drilling now generates **5% yearly army professionalism** instead of **1% yearly army professionalism**
@@ -65,6 +66,9 @@
 
 #### Score
 - **COUNTRIES_GETTING_SCORE** changed from **10** to **0**. I.e. removed score from the game.
+
+#### State Edicts
+- Removed **encourage development** state edict
 
 #### Static Modifiers
 - **100% Horde Unity** now grants **+100% reform progress**, modifier relates linearly to percentage

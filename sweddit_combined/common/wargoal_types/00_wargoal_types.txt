@@ -2337,9 +2337,9 @@ superiority_chinese_unification = {
 	type = superiority
 	
 	attacker = {
-		badboy_factor = 0.25
+		badboy_factor = 0.75
 		prestige_factor = 1.5
-		peace_cost_factor = 0.5
+		peace_cost_factor = 1
 		
 		allowed_provinces = {
 			superregion = china_superregion
