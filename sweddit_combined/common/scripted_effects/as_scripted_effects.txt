@@ -121,11 +121,6 @@ as_config = {
 
 update_ratings = {
 	every_country = {
-		limit = {
-			NOT = {
-				tag = CZH
-			}
-		}
 		export_to_variable = {
 			which = as_rating
 			value = total_development
@@ -169,24 +164,35 @@ update_ratings = {
 }
 
 find_top_power = {
-	save_event_target_as = possible_top_power
+    random_country = {
+        limit = {
+            NOT = {
+                tag = CZH
+            }
+        }
+        save_event_target_as = possible_top_power
+    }
+    
 
-	every_country = {
-		limit = {
-			any_great_power = {
-				tag = PREV
-				check_variable = {
-					which = as_rating
-					which = event_target:possible_top_power
-				}
-			}
-		}
-		save_event_target_as = possible_top_power
-	}
+    every_country = {
+        limit = {
+            NOT = {
+                tag = CZH
+            }
+            any_great_power = {
+                tag = PREV
+                check_variable = {
+                    which = as_rating
+                    which = event_target:possible_top_power
+                }
+            }
+        }
+        save_event_target_as = possible_top_power
+    }
 
-	event_target:possible_top_power = {
-		save_global_event_target_as = top_power
-	}
+    event_target:possible_top_power = {
+        save_global_event_target_as = top_power
+    }
 }
 
 update_power_ratings = {

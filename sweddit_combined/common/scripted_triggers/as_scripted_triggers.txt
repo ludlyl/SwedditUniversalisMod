@@ -70,6 +70,10 @@ in_treaty_with = {
 }
 
 would_break_rules = {
+    is_player = yes
+    $compare$ = {
+        is_player = yes
+    }
     OR = {
         AND = {
             $compare$ = { is_variable_equal = { which = as_cost value = 1 } }
