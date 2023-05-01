@@ -1,9 +1,5 @@
 as_config = {
 	every_country = {
-		limit = {
-			is_player = yes
-		}
-
 		set_variable = {
 			which = as_points_base
 			value = $base_points$
@@ -121,6 +117,11 @@ as_config = {
 
 update_ratings = {
 	every_country = {
+		limit = {
+			NOT = {
+				forbidden_tags = yes
+			}
+		}
 		export_to_variable = {
 			which = as_rating
 			value = total_development
@@ -164,21 +165,10 @@ update_ratings = {
 }
 
 find_top_power = {
-    random_country = {
-        limit = {
-            NOT = {
-                tag = CZH
-            }
-        }
-        save_event_target_as = possible_top_power
-    }
+    save_event_target_as = possible_top_power
     
-
     every_country = {
         limit = {
-            NOT = {
-                tag = CZH
-            }
             any_great_power = {
                 tag = PREV
                 check_variable = {

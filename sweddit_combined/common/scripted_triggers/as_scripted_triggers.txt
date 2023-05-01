@@ -157,3 +157,7 @@ would_break_rules = {
         }
     }
 }
+
+forbidden_tags = {
+    tag = CZH
+}
