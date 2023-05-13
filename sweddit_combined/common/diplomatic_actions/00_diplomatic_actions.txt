@@ -117,7 +117,7 @@ declarewar = {
 	#	}
 	#}
 	pre_effect = {
-		set_country_flag = force_update_treaties
+		
 		country_event = {
 			id = as.4
 		}
@@ -338,12 +338,12 @@ allianceaction = {
 		}
 	}
 	effect = {
-		set_country_flag = force_update_treaties
+		
 		country_event = {
 			id = as.4
 		}
 		FROM = {
-			set_country_flag = force_update_treaties
+			
 			country_event = {
 				id = as.4
 			}
@@ -669,6 +669,17 @@ ask_for_tributary_state_action = {
 break_alliance = {
 	effect = {
 		on_alliance_broken_effect = yes
+
+		# Alliance System
+		country_event = {
+			id = as.4
+		}
+		FROM = {
+			
+			country_event = {
+				id = as.4
+			}
+		}
 	}
 }
 
@@ -697,7 +708,7 @@ guaranteeaction = {
 	}
 	effect = {
 		FROM = {
-			set_country_flag = force_update_treaties
+			
 			country_event = {
 				id = as.4
 			}
@@ -746,14 +757,14 @@ support_independence_action = {
 				}
 			}
 			FROM = {
-				set_country_flag = force_update_treaties
+				
 				country_event = {
 					id = as.4
 				}
 			}
 		}
 		else = {
-			set_country_flag = force_update_treaties
+			
 			country_event = {
 				id = as.4
 			}

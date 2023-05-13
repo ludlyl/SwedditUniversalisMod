@@ -10,7 +10,7 @@ country_decisions = {
 		}
 		effect = {
 			hidden_effect = {
-				as_update_ratings = yes
+				update_treaties = yes
 			}
 			custom_tooltip = as_stats_tt
 			custom_tooltip = as_treaties_tt
