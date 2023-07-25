@@ -19,3 +19,16 @@
 # Faster ship building
  fast_ship_building:0 "Faster ship construction"
  desc_fast_ship_building:0 "Hahaha, dockyards go brrrr"
+# Australia trade company
+ TRADE_COMPANY_AUSTRALIA_Root_Culture_GetName:0 "[Root.Culture.GetName] Australian Company"
+ TRADE_COMPANY_AUSTRALIA_Oceania_Trade_Company:0 "Australian Company"
+ trade_company_australia:0 "Australian Charter"
+# Reichskrieg CB
+ sweddit_reichskrieger:0 "Reichskrieg"
+ sweddit_reichskrieg_target:0 "Reichskrieg Target"
+ sweddit_reichkriegs_crusade:0 "Reichskrieg"
+ sweddit_reichkriegs_crusade_desc:0 "They are the enemy of the Empire"
+ sweddit_reichskrieg_action:0 "Call for Reichskrieg"
+ sweddit_reichskrieg_action_title:0 "Call for Reichskrieg"
+ sweddit_reichskrieg_action_desc:1 "They are the enemy of the Empire, should the Emperor call for Reichskrieg?"
+ sweddit_reichskrieg_action_tooltip:0 "They are the enemy of the Empire. We, as the Emperor, can call for Reichskrieg"

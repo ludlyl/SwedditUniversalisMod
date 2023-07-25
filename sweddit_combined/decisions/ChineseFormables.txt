@@ -5,7 +5,7 @@ country_decisions = {
 			NOT = { has_country_flag = formed_chinese_empire }
 			NOT = { tag = CZH }
 			was_never_end_game_tag_trigger = yes
-			has_reform = chinese_warlord
+			culture_group = east_asian
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -45,7 +45,7 @@ country_decisions = {
 				is_emperor_of_china = yes
 			}
 			is_free_or_tributary_trigger = yes
-			has_reform = chinese_warlord
+			culture_group = east_asian
 			is_at_war = no
 			AND = {
 				owns_core_province = 1816 #Beijing
@@ -100,6 +100,7 @@ country_decisions = {
 				}
 				add_permanent_claim = ROOT
 			}
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 1

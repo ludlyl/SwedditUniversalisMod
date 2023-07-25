@@ -6,11 +6,12 @@
 - Added **form Empire of China** decision which forms **Ming** and restores the **Mandate of Heaven** if it has been disbanded
 
 #### History
-- **Ming** broken up into multiple nations, many with **unique national ideas**
-- All Chinese nations are now **daimyo type vassals** to the **Chinese emperor**, allowing them to fight internally
+- **Ming** broken up into multiple tributary nations, many with **unique national ideas**
 
-#### Triggered Modifiers
+#### Mandate of heaven
 - The **Chinese emperor** always get **+0.1 mandate growth**
+- Reduced **Mandate loss** from **devastation** from 10 per 100 devastated development to 0.5
+- Removed military maluses from **low mandate** and added **+50% stability cost**
 
 ## Alliance mod
 
@@ -24,6 +25,9 @@
 
 #### Alliances
 - Removed opinion requirement for forming alliance
+
+#### Colonial Regions
+- Removed Australia as a **colonial region**, it is now a **trade charter**
 
 #### Defender of Faith
 - Made **DoF** available to all religions
@@ -40,8 +44,14 @@
 - **Maritime ideas** changed, replaced **Ship repair in coastal sea zone** with **+1 admiral maneuver**
 - **Polish ideas** nerfed, reduced **cavalry combat ability** from **30%** to **20%**
 
+#### Imperial reforms
+- **Reichskrieg** vanilla behaviour has been disabled, it now functions similarly to **crusades**
+
 #### Land warfare modifiers
 - Assault fort now costs **50 military points** instead of **5 military points**
+
+#### Missions
+- **Polish missions** nerfed, got rid of **+50% cavalry to infantry ratio** modifier
 
 #### National Focus
 - Changed base national focus cooldown from **25** years to **15** years
@@ -52,12 +62,15 @@
 #### Score
 - **COUNTRIES_GETTING_SCORE** changed from **10** to **0**. I.e. removed score from the game.
 
-#### Static Modifiers
+#### State Edicts:
+- Removed **development edict**, instead all full cores give **-10% dev cost**
+
+#### Static Modifierss
 - **100% Horde Unity** now grants **+100% reform progress**, modifier relates linearly to percentage
 
 ####  Triggered Modifiers
-- All countries get **--100% envoy travel time**
-- All countries get **--100% ship construction time**
+- All countries get **-100% envoy travel time**
+- All countries get **-100% ship construction time**
 - **Rapid Collapse of Society 2** modifier created which negates the original **Rapid Collapse of Society**
 	- Disgusting solution, don't @ me
 
