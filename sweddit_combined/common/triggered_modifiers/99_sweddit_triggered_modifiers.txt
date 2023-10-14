@@ -39,17 +39,6 @@ teleporting_diplomats = {
 	envoy_travel_time = -1
 }
 
-fast_ship_building = {
-	potential = {
-		always = yes
-	}
-	trigger = {
-		always = yes
-	}
-	
-	global_ship_recruit_speed = -1
-}
-
 eoc_handicap = {
 	potential = {
 		is_emperor_of_china = yes

@@ -14,7 +14,6 @@
 - Removed military maluses from **low mandate** and added **+50% stability cost**
 
 ## Alliance mod
-
 - Custom system which keeps track of player-player alliances
 
 ## Misc changes
@@ -33,11 +32,11 @@
 - Made **DoF** available to all religions
 - Reversed the levels of **DoF**, fewer followers of religion = stronger **DoF**
 
-#### Estate Privileges
-- Nerfed **Maratha Military Leadership** estate privilege, from **10% discipline** to **5% discipline**
-
 #### Events
 - Changed **Polish-Lithuanian Personal Union** events so that **Lithuania** gets a choice in the establishment of the union
+
+#### Government reforms
+- Parliament issues **Draft** and **Emergency impressment act** now give half the amount of manpower/sailors
 
 #### Ideas
 - Removed **Naval ideas**
@@ -49,9 +48,6 @@
 
 #### Land warfare modifiers
 - Assault fort now costs **50 military points** instead of **5 military points**
-
-#### Missions
-- **Polish missions** nerfed, got rid of **+50% cavalry to infantry ratio** modifier
 
 #### National Focus
 - Changed base national focus cooldown from **25** years to **15** years
@@ -70,7 +66,6 @@
 
 ####  Triggered Modifiers
 - All countries get **-100% envoy travel time**
-- All countries get **-100% ship construction time**
 - **Rapid Collapse of Society 2** modifier created which negates the original **Rapid Collapse of Society**
 	- Disgusting solution, don't @ me
 

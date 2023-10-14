@@ -1,6 +1,1 @@
-pol_cavalry_with_state_modifier = {
-	cossacks_loyalty_modifier = 0.1 
-	cavalry_cost = -0.1
-}
-
 sweddit_reichskrieg_target = {}
