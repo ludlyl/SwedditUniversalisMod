@@ -546,5 +546,3 @@ reset_global_flag_timer = {
     clr_global_flag = $flag$
     set_global_flag = $flag$
 }
-
-
