@@ -1662,7 +1662,7 @@ naval_ideas = {
 	category = MIL
 
 	trigger = {
-		always = no
+		primitives = no
 	}
 
 	bonus = {
@@ -1806,8 +1806,9 @@ mercenary_ideas = {
 		mil_advisor_cost = -0.25
 		merc_independent_from_trade_range = yes
 	}
+	# Sweddit change: Lowered mercenary maintenence modifier by 10%
 	expanded_contracts = {
-		merc_maintenance_modifier = -0.25
+		merc_maintenance_modifier = -0.15
 	}
 	nation_of_war = {
 		mil_tech_cost_modifier = -0.1
@@ -1819,8 +1820,9 @@ mercenary_ideas = {
 	seasoned_veterans = {
 		infantry_power = 0.1
 	}
+	# Sweddit change: Lowered mercenary manpower modifier by 10%
 	organised_mercenary_recruitment = { 
-		mercenary_manpower = 0.3
+		mercenary_manpower = 0.2
 		allow_mercenary_drill = yes
 	}
 

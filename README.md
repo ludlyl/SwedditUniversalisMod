@@ -25,6 +25,9 @@
 #### Alliances
 - Removed opinion requirement for forming alliance
 
+#### Cavalry
+- Changed the cap for **cavalry cost modifiers** from **-80%** to **-30%**
+
 #### Colonial Regions
 - Removed Australia as a **colonial region**, it is now a **trade charter**
 
@@ -37,17 +40,20 @@
 
 #### Government reforms
 - Parliament issues **Draft** and **Emergency impressment act** now give half the amount of manpower/sailors
+- **Mercenary mobilization** nerfed to give **5% mercenary discipline** and **15% mercenary manpower**
 
 #### Ideas
-- Removed **Naval ideas**
 - **Maritime ideas** changed, replaced **Ship repair in coastal sea zone** with **+1 admiral maneuver**
-- **Polish ideas** nerfed, reduced **cavalry combat ability** from **30%** to **20%**
+- **Mercenary ideas** nerfed to only give **-15% mercenary maintenance** and **20% mercenary manpower**
 
 #### Imperial reforms
 - **Reichskrieg** vanilla behaviour has been disabled, it now functions similarly to **crusades**
 
 #### Land warfare modifiers
 - Assault fort now costs **50 military points** instead of **5 military points**
+
+#### Mercenaries
+- Removed all regional, non-flavour mercenary companies
 
 #### National Focus
 - Changed base national focus cooldown from **25** years to **15** years

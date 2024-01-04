@@ -1,0 +1,369 @@
+namespace = sweddit_expensive_cav
+
+country_event = {
+	id = sweddit_expensive_cav.1
+	title = none
+	desc = none
+	picture = none
+
+	hidden = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			remove_country_modifier = cav_cost_5
+			remove_country_modifier = cav_cost_10
+			remove_country_modifier = cav_cost_15
+			remove_country_modifier = cav_cost_20
+			remove_country_modifier = cav_cost_25
+			remove_country_modifier = cav_cost_30
+			remove_country_modifier = cav_cost_35
+			remove_country_modifier = cav_cost_40
+			remove_country_modifier = cav_cost_45
+			remove_country_modifier = cav_cost_50
+			remove_country_modifier = cav_cost_55
+			remove_country_modifier = cav_cost_60
+			remove_country_modifier = cav_cost_65
+			remove_country_modifier = cav_cost_70
+			remove_country_modifier = cav_cost_75
+			remove_country_modifier = cav_cost_80
+			remove_country_modifier = cav_cost_85
+			remove_country_modifier = cav_cost_90
+			remove_country_modifier = cav_cost_95
+			remove_country_modifier = cav_cost_100
+			remove_country_modifier = cav_cost_105
+			remove_country_modifier = cav_cost_110
+			remove_country_modifier = cav_cost_115
+			remove_country_modifier = cav_cost_120
+
+			if = {
+				limit = {
+					has_global_modifier_value  = {
+						which = cavalry_cost
+						value = -0.3
+					}
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_global_modifier_value  = {
+						which = cavalry_cost
+						value = -0.35
+					}
+				}
+				add_country_modifier = {
+					name = cav_cost_5
+					duration = -1
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_global_modifier_value  = {
+						which = cavalry_cost
+						value = -0.4
+					}
+				}
+				add_country_modifier = {
+					name = cav_cost_10
+					duration = -1
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_global_modifier_value  = {
+						which = cavalry_cost
+						value = -0.45
+					}
+				}
+				add_country_modifier = {
+					name = cav_cost_15
+					duration = -1
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_global_modifier_value  = {
+						which = cavalry_cost
+						value = -0.5
+					}
+				}
+				add_country_modifier = {
+					name = cav_cost_20
+					duration = -1
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_global_modifier_value  = {
+						which = cavalry_cost
+						value = -0.55
+					}
+				}
+				add_country_modifier = {
+					name = cav_cost_25
+					duration = -1
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_global_modifier_value  = {
+						which = cavalry_cost
+						value = -0.6
+					}
+				}
+				add_country_modifier = {
+					name = cav_cost_30
+					duration = -1
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_global_modifier_value  = {
+						which = cavalry_cost
+						value = -0.65
+					}
+				}
+				add_country_modifier = {
+					name = cav_cost_35
+					duration = -1
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_global_modifier_value  = {
+						which = cavalry_cost
+						value = -0.7
+					}
+				}
+				add_country_modifier = {
+					name = cav_cost_40
+					duration = -1
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_global_modifier_value  = {
+						which = cavalry_cost
+						value = -0.75
+					}
+				}
+				add_country_modifier = {
+					name = cav_cost_45
+					duration = -1
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_global_modifier_value  = {
+						which = cavalry_cost
+						value = -0.8
+					}
+				}
+				add_country_modifier = {
+					name = cav_cost_50
+					duration = -1
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_global_modifier_value  = {
+						which = cavalry_cost
+						value = -0.85
+					}
+				}
+				add_country_modifier = {
+					name = cav_cost_55
+					duration = -1
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_global_modifier_value  = {
+						which = cavalry_cost
+						value = -0.9
+					}
+				}
+				add_country_modifier = {
+					name = cav_cost_60
+					duration = -1
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_global_modifier_value  = {
+						which = cavalry_cost
+						value = -0.95
+					}
+				}
+				add_country_modifier = {
+					name = cav_cost_65
+					duration = -1
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_global_modifier_value  = {
+						which = cavalry_cost
+						value = -1
+					}
+				}
+				add_country_modifier = {
+					name = cav_cost_70
+					duration = -1
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_global_modifier_value  = {
+						which = cavalry_cost
+						value = -1.05
+					}
+				}
+				add_country_modifier = {
+					name = cav_cost_75
+					duration = -1
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_global_modifier_value  = {
+						which = cavalry_cost
+						value = -1.1
+					}
+				}
+				add_country_modifier = {
+					name = cav_cost_80
+					duration = -1
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_global_modifier_value  = {
+						which = cavalry_cost
+						value = -1.15
+					}
+				}
+				add_country_modifier = {
+					name = cav_cost_85
+					duration = -1
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_global_modifier_value  = {
+						which = cavalry_cost
+						value = -1.2
+					}
+				}
+				add_country_modifier = {
+					name = cav_cost_90
+					duration = -1
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_global_modifier_value  = {
+						which = cavalry_cost
+						value = -1.25
+					}
+				}
+				add_country_modifier = {
+					name = cav_cost_95
+					duration = -1
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_global_modifier_value  = {
+						which = cavalry_cost
+						value = -1.3
+					}
+				}
+				add_country_modifier = {
+					name = cav_cost_100
+					duration = -1
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_global_modifier_value  = {
+						which = cavalry_cost
+						value = -1.35
+					}
+				}
+				add_country_modifier = {
+					name = cav_cost_105
+					duration = -1
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_global_modifier_value  = {
+						which = cavalry_cost
+						value = -1.4
+					}
+				}
+				add_country_modifier = {
+					name = cav_cost_110
+					duration = -1
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_global_modifier_value  = {
+						which = cavalry_cost
+						value = -1.45
+					}
+				}
+				add_country_modifier = {
+					name = cav_cost_115
+					duration = -1
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_global_modifier_value  = {
+						which = cavalry_cost
+						value = -1.5
+					}
+				}
+				add_country_modifier = {
+					name = cav_cost_120
+					duration = -1
+				}
+			}
+		}
+	}
+
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
