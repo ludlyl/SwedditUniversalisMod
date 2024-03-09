@@ -6,6 +6,7 @@
 ## Misc changes
 
 #### Ages
+- Age of Reformation **Persian -20% dev cost** age ability changed to **-10% tech cost**
 - Age of Revolutions **unlimited coring range** age ability changed to **+100% supply limit modifier**
 - Age of Absolutism **-50% change rival cost** age ability changed to **+100% power projection from insulting rival**
 
@@ -17,6 +18,9 @@
 
 #### Colonial Regions
 - Removed Australia as a **colonial region**, it is now a **trade charter**
+
+#### Decisions
+- Countries that have **at any point** been the **Timurid** tag may no longer form **Persia**
 
 #### Defender of Faith
 - Made **DoF** available to all religions
@@ -39,8 +43,8 @@
 #### Land warfare modifiers
 - Assault fort now costs **50 military points** instead of **5 military points**
 
-#### Mercenaries
-- Removed all regional, non-flavour mercenary companies
+#### Mandate of Heavean
+- **Loans** no longer cause **loss of mandate**
 
 #### National Focus
 - Changed base national focus cooldown from **25** years to **15** years
@@ -59,8 +63,8 @@
 
 ####  Triggered Modifiers
 - All countries get **-100% envoy travel time**
-- **Rapid Collapse of Society 2** modifier created which negates the original **Rapid Collapse of Society**
-	- Disgusting solution, don't @ me
+- The **Rapid Collapse of Society** modifier has been removed
+- A **protestant or reformed** HRE will give the **reformed empire modifier** to **protestant, reformed or anglican** nations
 
 #### Vassals:
 - Vassals no longer get **+50% development cost**
