@@ -29,6 +29,9 @@
 #### Events
 - Changed **Polish-Lithuanian Personal Union** events so that **Lithuania** gets a choice in the establishment of the union
 
+#### Forts
+- Forts maintenance starts becoming more expensive if you exceed 1 fort per 50 development
+
 #### Government reforms
 - Parliament issues **Draft** and **Emergency impressment act** now give half the amount of manpower/sailors
 - **Mercenary mobilization** nerfed to give **5% mercenary discipline** and **15% mercenary manpower**

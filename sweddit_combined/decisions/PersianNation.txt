@@ -38,6 +38,7 @@ country_decisions = {
 			NOT = { tag = TUR }
 			NOT = { tag = BYZ }
 			NOT = { tag = ARB }
+			NOT = { tag = TIM }
 			NOT = { was_tag = TIM }
 			if = {
 				limit = { has_dlc = "King of Kings" }

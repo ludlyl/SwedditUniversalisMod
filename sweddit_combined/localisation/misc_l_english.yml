@@ -20,3 +20,4 @@
  sweddit_reichskrieg_action_title:0 "Call for Reichskrieg"
  sweddit_reichskrieg_action_desc:1 "They are the enemy of the Empire, should the Emperor call for Reichskrieg?"
  sweddit_reichskrieg_action_tooltip:0 "They are the enemy of the Empire. We, as the Emperor, can call for Reichskrieg"
+ debug_tooltip_tt: "Fort count: §G[Root.fort_count.GetValue] Fort limit: §G[Root.fort_limit.GetValue]"
