@@ -425,12 +425,20 @@ age_of_reformation = {
 			}
 		}
 		
+		# Sweddit change: Replaced -20% dev cost to -10% tech cost
 		ab_persia_development = {
 			allow = {
-				tag = PER
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = unlocked_this_ab_tt
+						has_country_flag = enable_persian_age_ability_flag
+					}
+					tag = PER
+					tag = ERS
+				}
 			}
 			modifier = {
-				development_cost = -0.2
+				technology_cost = -0.1
 			}
 			ai_will_do = {
 				factor = 100
@@ -516,9 +524,9 @@ age_of_absolutism = {
 			}
 		}
 
+		# Sweddit change: Replaced reduced change rival cost to +100% power projection from insults
 		ab_rival_change = {
 			modifier = {
-				# Sweddit change: Replaced reduced change rival cost to +100% power projection from insults
 				power_projection_from_insults = 1 
 			}
 			ai_will_do = {

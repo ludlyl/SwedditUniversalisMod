@@ -1,33 +1,3 @@
-rapid_collapse_of_society_2 = {
-	potential = {
-		normal_or_historical_nations = yes
-		capital_scope = {
-			OR = {
-				continent = north_america
-				continent = south_america
-				continent = new_world
-			}
-		}
-	}
-	trigger = {
-		NOT = { has_institution = feudalism }
-		custom_trigger_tooltip = {
-			tooltip = rapid_collapse_of_society_tooltip
-			has_country_flag = european_diseases_struck
-			NOT = {
-				had_country_flag = {
-					flag = european_diseases_struck
-					days = 9125
-				}
-			}
-		}
-	}
-	
-	all_power_cost = -0.33
-	discipline = 0.1
-	land_morale = 0.2
-}
-
 teleporting_diplomats = {
 	potential = {
 		always = yes
@@ -39,24 +9,23 @@ teleporting_diplomats = {
 	envoy_travel_time = -1
 }
 
-fast_ship_building = {
+sweddit_reichskrieger = {
 	potential = {
-		always = yes
+		hre_reform_passed = emperor_reichskrieg
 	}
-	trigger = {
-		always = yes
-	}
-	
-	global_ship_recruit_speed = -1
-}
 
-eoc_handicap = {
-	potential = {
-		is_emperor_of_china = yes
-	}
 	trigger = {
-		is_emperor_of_china = yes
+		is_part_of_hre = yes
+		any_country = {
+			war_with = ROOT
+			has_country_modifier = sweddit_reichskrieg_target
+		}
 	}
-	
-	imperial_mandate = 0.1
+
+	global_manpower_modifier = 0.3
+	global_tax_modifier = 0.1
+	land_morale = 0.10
+	prestige = 1
+	mercenary_discipline = 0.05
+	global_unrest = -1
 }

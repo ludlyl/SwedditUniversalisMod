@@ -6,6 +6,14 @@ horde_unity = {
 	nomadic_tribes_loyalty_modifier = 0.05
 }
 
-
+# No devastation cost penalty for being a vassal
 vassal_nation = {
+}
+
+# Full core gives dev cost reduction
+core = {
+	local_tax_modifier = 0.75				#90% more in a core
+	local_manpower_modifier = 0.75			#75% more in a core
+	local_sailors_modifier = 0.75
+	local_development_cost = -0.1
 }

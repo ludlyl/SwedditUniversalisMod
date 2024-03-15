@@ -76,6 +76,10 @@ would_break_rules = {
     }
     OR = {
         AND = {
+            tag = MNG
+            NOT = { ming_unleashed = yes }
+        }
+        AND = {
             $compare$ = { is_variable_equal = { which = as_cost value = 1 } }
             NOT = { check_variable = { which = as_points value = 1 } } 
         }
@@ -158,6 +162,30 @@ would_break_rules = {
     }
 }
 
-forbidden_tags = {
-    tag = CZH
+country_flag_timer = {
+    OR = {
+        NOT = {
+            has_country_flag = $flag$
+        }
+        had_country_flag = {
+            flag = $flag$
+            days = $days$
+        }
+    }
+}
+
+global_flag_timer = {
+    OR = {
+        NOT = {
+            has_global_flag = $flag$
+        }
+        had_global_flag = {
+            flag = $flag$
+            days = $days$
+        }
+    }
+}
+
+ming_unleashed = {
+    year = 1500
 }

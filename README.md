@@ -1,47 +1,53 @@
 # Sweddit Universalis changelog
 
-## Mingsplosion
-
-#### Decisions
-- Added **form Empire of China** decision which forms **Ming** and restores the **Mandate of Heaven** if it has been disbanded
-
-#### History
-- **Ming** broken up into multiple nations, many with **unique national ideas**
-- All Chinese nations are now **daimyo type vassals** to the **Chinese emperor**, allowing them to fight internally
-
-#### Triggered Modifiers
-- The **Chinese emperor** always get **+0.1 mandate growth**
-
 ## Alliance mod
-
 - Custom system which keeps track of player-player alliances
 
 ## Misc changes
 
 #### Ages
+- Age of Reformation **Persian -20% dev cost** age ability changed to **-10% tech cost**
 - Age of Revolutions **unlimited coring range** age ability changed to **+100% supply limit modifier**
 - Age of Absolutism **-50% change rival cost** age ability changed to **+100% power projection from insulting rival**
 
 #### Alliances
 - Removed opinion requirement for forming alliance
 
+#### Cavalry
+- Changed the cap for **cavalry cost modifiers** from **-80%** to **-30%**
+
+#### Colonial Regions
+- Removed Australia as a **colonial region**, it is now a **trade charter**
+
+#### Decisions
+- Countries that have **at any point** been the **Timurid** tag may no longer form **Persia**
+
 #### Defender of Faith
 - Made **DoF** available to all religions
 - Reversed the levels of **DoF**, fewer followers of religion = stronger **DoF**
 
-#### Estate Privileges
-- Nerfed **Maratha Military Leadership** estate privilege, from **10% discipline** to **5% discipline**
-
 #### Events
 - Changed **Polish-Lithuanian Personal Union** events so that **Lithuania** gets a choice in the establishment of the union
 
+#### Forts
+- Forts maintenance starts becoming more expensive if you exceed 1 fort per 50 development
+
+#### Government reforms
+- Parliament issues **Draft** and **Emergency impressment act** now give half the amount of manpower/sailors
+- **Mercenary mobilization** nerfed to give **5% mercenary discipline** and **15% mercenary manpower**
+
 #### Ideas
-- Removed **Naval ideas**
 - **Maritime ideas** changed, replaced **Ship repair in coastal sea zone** with **+1 admiral maneuver**
-- **Polish ideas** nerfed, reduced **cavalry combat ability** from **30%** to **20%**
+- **Mercenary ideas** nerfed to only give **-15% mercenary maintenance** and **20% mercenary manpower**
+
+#### Imperial reforms
+- **Reichskrieg** vanilla behaviour has been disabled, it now functions similarly to **crusades**
 
 #### Land warfare modifiers
 - Assault fort now costs **50 military points** instead of **5 military points**
+
+#### Mandate of Heavean
+- **Loans** no longer cause **loss of mandate**
 
 #### National Focus
 - Changed base national focus cooldown from **25** years to **15** years
@@ -52,14 +58,16 @@
 #### Score
 - **COUNTRIES_GETTING_SCORE** changed from **10** to **0**. I.e. removed score from the game.
 
-#### Static Modifiers
+#### State Edicts:
+- Removed **development edict**, instead all full cores give **-10% dev cost**
+
+#### Static Modifierss
 - **100% Horde Unity** now grants **+100% reform progress**, modifier relates linearly to percentage
 
 ####  Triggered Modifiers
-- All countries get **--100% envoy travel time**
-- All countries get **--100% ship construction time**
-- **Rapid Collapse of Society 2** modifier created which negates the original **Rapid Collapse of Society**
-	- Disgusting solution, don't @ me
+- All countries get **-100% envoy travel time**
+- The **Rapid Collapse of Society** modifier has been removed
+- A **protestant or reformed** HRE will give the **reformed empire modifier** to **protestant, reformed or anglican** nations
 
 #### Vassals:
 - Vassals no longer get **+50% development cost**

@@ -1838,6 +1838,7 @@ country_event = {
 			custom_tooltip = pol_impact_future_missions_tt 
 			set_country_flag = pol_denied_pu_flag
 		}
+		custom_tooltip = pol_potential_cb_on_bohemia_tt
 	}
 }
 
@@ -1984,6 +1985,9 @@ country_event = {
 	major = yes
 	fire_only_once = yes
 	is_triggered_only = yes
+	immediate = {
+		on_non_estate_disaster_end = yes
+	}
 	
 	option = {
 		trigger = {
@@ -2653,7 +2657,6 @@ country_event = { #The Crown of Rome
 		LAE = { 
 			change_religion = catholic
 			set_dynasty = ROOT
-			set_country_flag = is_LAE_flag
 			hidden_effect = { 
 				every_owned_province = { 
 					limit = {

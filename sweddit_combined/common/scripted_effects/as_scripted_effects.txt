@@ -1,127 +1,125 @@
 as_config = {
-	every_country = {
-		set_variable = {
-			which = as_points_base
-			value = $base_points$
-		}
-		set_variable = {
-			which = as_cost_emperor
-			value = $hre_emperor_cost$
-		}
+	set_variable = {
+		which = as_config_version
+		value = $config_version$
+	}
 
-		set_variable = {
-			which = as_cost_great_power
-			value = $great_power_cost$
-		}
-		set_variable = {
-			which = as_cost_major_power
-			value = $major_power_cost$
-		}
-		set_variable = {
-			which = as_cost_prom_power
-			value = $prominent_power_cost$
-		}
-		set_variable = {
-			which = as_cost_notable_power
-			value = $notable_power_cost$
-		}
-		set_variable = {
-			which = as_cost_minor_power
-			value = $minor_power_cost$
-		}
-		set_variable = {
-			which = as_cost_puny_power
-			value = $puny_power_cost$
-		}
+	set_variable = {
+		which = as_points_base
+		value = $base_points$
+	}
+	set_variable = {
+		which = as_cost_emperor
+		value = $hre_emperor_cost$
+	}
 
-		set_variable = {
-			which = as_percentage_great_power
-			value = $great_power_percentage$
-		}
-		set_variable = {
-			which = as_percentage_major_power
-			value = $major_power_percentage$
-		}
-		set_variable = {
-			which = as_percentage_prom_power
-			value = $prominent_power_percentage$
-		}
-		set_variable = {
-			which = as_percentage_notable_power
-			value = $notable_power_percentage$
-		}
-		set_variable = {
-			which = as_percentage_minor_power
-			value = $minor_power_percentage$
-		}
-		set_variable = {
-			which = as_percentage_puny_power
-			value = $puny_power_percentage$
-		}
+	set_variable = {
+		which = as_cost_great_power
+		value = $great_power_cost$
+	}
+	set_variable = {
+		which = as_cost_major_power
+		value = $major_power_cost$
+	}
+	set_variable = {
+		which = as_cost_prom_power
+		value = $prominent_power_cost$
+	}
+	set_variable = {
+		which = as_cost_notable_power
+		value = $notable_power_cost$
+	}
+	set_variable = {
+		which = as_cost_minor_power
+		value = $minor_power_cost$
+	}
+	set_variable = {
+		which = as_cost_puny_power
+		value = $puny_power_cost$
+	}
 
-		set_variable = {
-			which = as_points_max_great_power
-			which = as_points_base
-		}
-		subtract_variable = {
-			which = as_points_max_great_power
-			which = as_cost_great_power
-		}
+	set_variable = {
+		which = as_percentage_great_power
+		value = $great_power_percentage$
+	}
+	set_variable = {
+		which = as_percentage_major_power
+		value = $major_power_percentage$
+	}
+	set_variable = {
+		which = as_percentage_prom_power
+		value = $prominent_power_percentage$
+	}
+	set_variable = {
+		which = as_percentage_notable_power
+		value = $notable_power_percentage$
+	}
+	set_variable = {
+		which = as_percentage_minor_power
+		value = $minor_power_percentage$
+	}
+	set_variable = {
+		which = as_percentage_puny_power
+		value = $puny_power_percentage$
+	}
 
-		set_variable = {
-			which = as_points_max_major_power
-			which = as_points_base
-		}
-		subtract_variable = {
-			which = as_points_max_major_power
-			which = as_cost_major_power
-		}
+	set_variable = {
+		which = as_points_max_great_power
+		which = as_points_base
+	}
+	subtract_variable = {
+		which = as_points_max_great_power
+		which = as_cost_great_power
+	}
 
-		set_variable = {
-			which = as_points_max_prom_power
-			which = as_points_base
-		}
-		subtract_variable = {
-			which = as_points_max_prom_power
-			which = as_cost_prom_power
-		}
+	set_variable = {
+		which = as_points_max_major_power
+		which = as_points_base
+	}
+	subtract_variable = {
+		which = as_points_max_major_power
+		which = as_cost_major_power
+	}
 
-		set_variable = {
-			which = as_points_max_notable_power
-			which = as_points_base
-		}
-		subtract_variable = {
-			which = as_points_max_notable_power
-			which = as_cost_notable_power
-		}
+	set_variable = {
+		which = as_points_max_prom_power
+		which = as_points_base
+	}
+	subtract_variable = {
+		which = as_points_max_prom_power
+		which = as_cost_prom_power
+	}
 
-		set_variable = {
-			which = as_points_max_minor_power
-			which = as_points_base
-		}
-		subtract_variable = {
-			which = as_points_max_minor_power
-			which = as_cost_minor_power
-		}
+	set_variable = {
+		which = as_points_max_notable_power
+		which = as_points_base
+	}
+	subtract_variable = {
+		which = as_points_max_notable_power
+		which = as_cost_notable_power
+	}
 
-		set_variable = {
-			which = as_points_max_puny_power
-			which = as_points_base
-		}
-		subtract_variable = {
-			which = as_points_max_puny_power
-			which = as_cost_puny_power
-		}
+	set_variable = {
+		which = as_points_max_minor_power
+		which = as_points_base
+	}
+	subtract_variable = {
+		which = as_points_max_minor_power
+		which = as_cost_minor_power
+	}
+
+	set_variable = {
+		which = as_points_max_puny_power
+		which = as_points_base
+	}
+	subtract_variable = {
+		which = as_points_max_puny_power
+		which = as_cost_puny_power
 	}
 }
 
 update_ratings = {
 	every_country = {
-		limit = {
-			NOT = {
-				forbidden_tags = yes
-			}
-		}
 		export_to_variable = {
 			which = as_rating
 			value = total_development
@@ -169,6 +167,10 @@ find_top_power = {
     
     every_country = {
         limit = {
+			NOT = {
+				ming_unleashed = yes
+				tag = MNG
+			}
             any_great_power = {
                 tag = PREV
                 check_variable = {
@@ -539,4 +541,12 @@ check_rulebreak = {
 	}
 }
 
+reset_country_flag_timer = {
+    clr_country_flag = $flag$
+    set_country_flag = $flag$
+}
 
+reset_global_flag_timer = {
+    clr_global_flag = $flag$
+    set_global_flag = $flag$
+}
