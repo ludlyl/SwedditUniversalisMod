@@ -1,0 +1,270 @@
+namespace = sweddit_expensive_forts
+
+country_event = {
+	id = sweddit_expensive_forts.1
+	title = none
+	desc = none
+	picture = none
+
+	hidden = yes
+
+	trigger = {
+		ai = no
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	immediate = {
+		hidden_effect = {
+			remove_country_modifier = fort_cost_1
+			remove_country_modifier = fort_cost_2
+			remove_country_modifier = fort_cost_3
+			remove_country_modifier = fort_cost_4
+			remove_country_modifier = fort_cost_5
+			remove_country_modifier = fort_cost_6
+			remove_country_modifier = fort_cost_7
+			remove_country_modifier = fort_cost_8
+			remove_country_modifier = fort_cost_9
+			remove_country_modifier = fort_cost_10
+			remove_country_modifier = fort_cost_11
+			remove_country_modifier = fort_cost_12
+			remove_country_modifier = fort_cost_13
+			remove_country_modifier = fort_cost_14
+
+			set_variable = {
+				which = fort_count
+				value = -1
+			}
+
+			every_owned_province = {
+				limit = {
+					fort_level = 2
+				}
+				PREV = {
+					change_variable = {
+						which = fort_count
+						value = 1
+					}
+				}
+			}
+
+			export_to_variable = {
+				which = fort_limit
+				value = total_development
+			}
+
+			divide_variable = {
+				which = fort_limit
+				value = 50
+			}
+
+			flatten = {
+				float = fort_limit
+			}
+
+			subtract_variable = {
+				which = fort_limit
+				which = fort_count
+			}
+
+			if = {
+				limit = {
+					check_variable  = {
+						which = fort_limit
+						value = 0
+					}
+				}
+			}
+
+			else_if = {
+				limit = {
+					check_variable  = {
+						which = fort_limit
+						value = -1
+					}
+				}
+				add_country_modifier = {
+					name = fort_cost_1 # +10%
+					duration = -1
+				}
+			}
+			
+			else_if = {
+				limit = {
+					check_variable  = {
+						which = fort_limit
+						value = -2
+					}
+				}
+				add_country_modifier = {
+					name = fort_cost_2 # +20%
+					duration = -1
+				}
+			}
+
+			else_if = {
+				limit = {
+					check_variable  = {
+						which = fort_limit
+						value = -3
+					}
+				}
+				add_country_modifier = {
+					name = fort_cost_3 # +40%
+					duration = -1
+				}
+			}
+
+			else_if = {
+				limit = {
+					check_variable  = {
+						which = fort_limit
+						value = -4
+					}
+				}
+				add_country_modifier = {
+					name = fort_cost_4 # +70%
+					duration = -1
+				}
+			}
+
+			else_if = {
+				limit = {
+					check_variable  = {
+						which = fort_limit
+						value = -5
+					}
+				}
+				add_country_modifier = {
+					name = fort_cost_5 # +110%
+					duration = -1
+				}
+			}
+
+			else_if = {
+				limit = {
+					check_variable  = {
+						which = fort_limit
+						value = -6
+					}
+				}
+				add_country_modifier = {
+					name = fort_cost_6 # +160%
+					duration = -1
+				}
+			}
+
+			else_if = {
+				limit = {
+					check_variable  = {
+						which = fort_limit
+						value = -7
+					}
+				}
+				add_country_modifier = {
+					name = fort_cost_7 # +220%
+					duration = -1
+				}
+			}
+
+			else_if = {
+				limit = {
+					check_variable  = {
+						which = fort_limit
+						value = -8
+					}
+				}
+				add_country_modifier = {
+					name = fort_cost_8 # +290%
+					duration = -1
+				}
+			}
+
+			else_if = {
+				limit = {
+					check_variable  = {
+						which = fort_limit
+						value = -9
+					}
+				}
+				add_country_modifier = {
+					name = fort_cost_9 # +380%
+					duration = -1
+				}
+			}
+
+			else_if = {
+				limit = {
+					check_variable  = {
+						which = fort_limit
+						value = -10
+					}
+				}
+				add_country_modifier = {
+					name = fort_cost_10 # +480%
+					duration = -1
+				}
+			}
+
+			else_if = {
+				limit = {
+					check_variable  = {
+						which = fort_limit
+						value = -11
+					}
+				}
+				add_country_modifier = {
+					name = fort_cost_11 # +590%
+					duration = -1
+				}
+			}
+
+			else_if = {
+				limit = {
+					check_variable  = {
+						which = fort_limit
+						value = -12
+					}
+				}
+				add_country_modifier = {
+					name = fort_cost_12 # +710%
+					duration = -1
+				}
+			}
+
+			else_if = {
+				limit = {
+					check_variable  = {
+						which = fort_limit
+						value = -13
+					}
+				}
+				add_country_modifier = {
+					name = fort_cost_13 # +840%
+					duration = -1
+				}
+			}
+
+			else_if = {
+				limit = {
+					check_variable  = {
+						which = fort_limit
+						value = -14
+					}
+				}
+				add_country_modifier = {
+					name = fort_cost_14 # +980%
+					duration = -1
+				}
+			}
+		}
+	}
+
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+	}
+}

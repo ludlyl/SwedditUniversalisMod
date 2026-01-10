@@ -1,0 +1,24 @@
+country_decisions = {
+
+	sweddit_reroll_decision = {
+		major = yes
+		potential = {
+			ai = no
+			has_country_flag = sweddit_reroll_flag
+		}
+		allow = {
+			ai = no
+			has_country_flag = sweddit_reroll_flag
+		}
+		effect = {
+			clr_country_flag = sweddit_reroll_flag
+			add_country_modifier = {
+				name = sweddit_reroll_ideas
+				duration = 180
+			}
+		}
+		ai_will_do = {
+			factor = -1
+		}
+	}
+}

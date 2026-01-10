@@ -7,6 +7,8 @@
 # ROOT = country picking the idea
 # groups set to colonial=yes will be higher prioritized by the AI when spending power
 
+#ideas in the group can have effect = {} and removed_effect = {}
+
 aristocracy_ideas = {
 	category = MIL
 
@@ -35,6 +37,7 @@ aristocracy_ideas = {
 	noble_officers = {
 		army_tradition_decay = -0.01
 		navy_tradition_decay = -0.01
+		num_of_pronoiars = 1
 	}
 	international_nobility = {
 		diplomats = 1
@@ -160,7 +163,8 @@ horde_gov_ideas = {
 	}
 	
 	horse_lords = {
-		cavalry_cost = -0.33
+		# Sweddit change: Removed 3% cavalry cost so that it is divisible by 5 and works better with the cav cost cap.
+		cavalry_cost = -0.30
 		cav_to_inf_ratio = 0.10
 	}
 	beyond_the_sun = {
@@ -498,6 +502,7 @@ spy_ideas = {
 	blackmailing = {
 		monthly_favor_modifier = 0.33
 		accept_vassalization_reasons = 15
+		num_of_pronoiars = 1
 	}
 
 	ai_will_do = {
@@ -571,6 +576,7 @@ offensive_ideas = {
 
 	bonus = {
 		recover_army_morale_speed = 0.1
+		qizilbash_loyalty_modifier = 0.1
 	}
 
 	bayonet_leaders = {
@@ -584,6 +590,7 @@ offensive_ideas = {
 	}
 	glorious_arms = {
 		prestige_from_land = 1.0
+		num_of_pronoiars = 1
 	}
 	engineer_corps = {
 		siege_ability = 0.20
@@ -697,6 +704,35 @@ defensive_ideas = {
 	}
 	improved_foraging = {
 		garrison_size = 0.33
+		effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						has_country_flag = ned_buffed_forts_flag
+					}
+					every_owned_province = {
+						limit = {
+							region = low_countries_region
+							has_fort_building_trigger = yes
+						}
+						remove_province_modifier = ned_low_countries_fort_buff
+						add_province_modifier = {
+							name = ned_low_countries_fort_buff_buffed
+							duration = -1
+							hidden = yes
+						}
+					}
+				}
+			}
+		}
+		removed_effect = {
+			hidden_effect = {
+				every_owned_province = {
+					limit = { has_province_modifier = ned_low_countries_fort_buff_buffed }
+					remove_province_modifier = ned_low_countries_fort_buff_buffed
+				}
+			}
+		}
 	}
 
 	#until_the_last_man = {
@@ -858,22 +894,22 @@ economic_ideas = {
 	national_bank = {
 		inflation_reduction = 0.1
 	}
-	smithian_economics = { 
-		#Mechanic: +1/-1 Dev from Manufactories		#Note for modders; the two mechanics introduced in 1.35   
-		production_efficiency = 0.1 				#for eco ideas are done so via on_actions 
- 	}												#for the loans and via the buildings file for the dev from manufactories! happy modding 
+	merchant_passes = {
+		merchants = 1
+	}
 	efficient_mining = {
 		gold_depletion_chance_modifier = -0.25
-	}
-	nationalistic_enthusiasm = {
-		land_maintenance_modifier = -0.05
 	}
 	debt_and_loans = {
 		interest = -0.5
 	}
-	merchant_passes = {
-		merchants = 1
+	nationalistic_enthusiasm = {
+		land_maintenance_modifier = -0.05
 	}
+	smithian_economics = { 
+		#Mechanic: +1/-1 Dev from Manufactories		#Note for modders; the two mechanics introduced in 1.35   
+		production_efficiency = 0.1					#for eco ideas are done so via on_actions 
+ 	}	
 
 	ai_will_do = {
 		factor = 0.35
@@ -934,6 +970,7 @@ exploration_ideas = {
 	}
 	colonial_ventures = {
 		colonists = 1
+		effect = { remove_temporary_colonist = yes }
 	}
 	overseas_exploration = {
 		range = 0.5
@@ -1208,6 +1245,7 @@ quality_ideas = {
 	bonus = {
 		discipline = 0.05
 		janissaries_loyalty_modifier = 0.1
+		ghulams_loyalty_modifier = 0.1
 	}
 
 	private_to_marshal = {
@@ -1301,9 +1339,11 @@ quantity_ideas = {
 
 	bonus = {
 		land_forcelimit_modifier  = 0.33
+		num_of_pronoiars = 1
 	}
 	mass_army = {
 		global_manpower_modifier = 0.33
+		num_of_pronoiars = 1
 	}
 	the_young_can_serve = {
 		manpower_recovery_speed = 0.20
@@ -1380,6 +1420,7 @@ expansion_ideas = {
 
 	additional_colonists = {
 		colonists = 1
+		effect = { remove_temporary_colonist = yes }
 	}
 	additional_merchants = {
 		merchants = 1
@@ -1398,6 +1439,7 @@ expansion_ideas = {
 	general_colonization_law  = {
 		colonists = 1
 		colonist_placement_chance = 0.05
+		effect = { remove_temporary_colonist = yes }
 	}
 	competetive_merchants  = {
 		global_trade_power = 0.2
@@ -1464,6 +1506,7 @@ administrative_ideas = {
 	}
 	local_rule = {
 		advisor_pool = 1
+		num_of_pronoiars = 1
 	}
 	adaptability = {
 		core_creation = -0.25
@@ -1645,6 +1688,78 @@ influence_ideas = {
 	}
 }
 
+naval_ideas = {
+	# Sweddit change: Moved category from military to diplomatic
+	category = DIP
+
+	trigger = {
+		primitives = no
+	}
+
+	bonus = {
+		global_naval_barrage_cost = -1
+		disengagement_chance = 0.15
+	}
+
+	boarding_parties = {
+		leader_naval_shock = 1
+		landing_penalty = -1
+	}
+	improved_rams = {
+		galley_power = 0.25
+	}
+	naval_cadets = {
+		leader_naval_fire = 1
+		sunk_ship_morale_hit_recieved = -0.33
+	}
+	naval_glory = {
+		navy_tradition = 1
+		siege_blockade_progress = 1
+	}
+	press_gangs = {
+		sailors_recovery_speed = 0.25
+		allowed_marine_fraction = 0.25
+	}
+	oak_forests_for_ships = {
+		heavy_ship_power = 0.20
+		ship_durability = 0.1
+	}
+	superior_seamanship = {
+		naval_morale = 0.1
+		global_naval_engagement_modifier = 0.1
+	}
+
+	ai_will_do = {
+		factor = 0.45
+		modifier = {
+			factor = 0
+			is_tribal = yes
+		}
+		modifier = {
+			factor = 0
+			primitives = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_ports = 1 }
+			NOT = { is_colonial_nation = yes }
+		}
+		modifier = {
+			factor = 0.31
+			NOT = { num_of_ports = 10 }
+		}
+		modifier = {
+			factor = 0.31
+			num_of_cities = 50
+		}
+
+		modifier = {
+			factor = 10
+			has_government_attribute = is_pirate_republic_reform
+		}
+	}
+}
+
 court_ideas = {
 	category = DIP
 
@@ -1657,10 +1772,12 @@ court_ideas = {
 		meritocracy = 0.25 
 		imperial_mandate = 0.1
 		imperial_authority = 0.05
+		monthly_cultural_unity = 0.5
 	}
 	
 	long_echo = {
 		power_projection_from_insults = 1
+		diplomatic_reputation = 1
 	}
 	recognize_hierarchy = {
 		all_estate_loyalty_equilibrium = 0.1
@@ -1668,6 +1785,7 @@ court_ideas = {
 	}
 	welcoming_ceremonies = {
 		prestige = 1 
+		monthly_persian_influence = 0.1
 	}
 	tranquil_coordination = {
 		reform_progress_growth = 0.2
@@ -1720,8 +1838,9 @@ mercenary_ideas = {
 		mil_advisor_cost = -0.25
 		merc_independent_from_trade_range = yes
 	}
+	# Sweddit change: Lowered mercenary maintenence modifier by 10%
 	expanded_contracts = {
-		merc_maintenance_modifier = -0.25
+		merc_maintenance_modifier = -0.15
 	}
 	nation_of_war = {
 		mil_tech_cost_modifier = -0.1
@@ -1733,8 +1852,9 @@ mercenary_ideas = {
 	seasoned_veterans = {
 		infantry_power = 0.1
 	}
+	# Sweddit change: Lowered mercenary manpower modifier by 10%
 	organised_mercenary_recruitment = { 
-		mercenary_manpower = 0.3
+		mercenary_manpower = 0.2
 		allow_mercenary_drill = yes
 	}
 

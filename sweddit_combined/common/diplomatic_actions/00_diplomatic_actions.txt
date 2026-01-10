@@ -117,7 +117,7 @@ declarewar = {
 	#	}
 	#}
 	pre_effect = {
-		set_country_flag = force_update_treaties
+		
 		country_event = {
 			id = as.4
 		}
@@ -151,10 +151,23 @@ declarewar = {
 		}
 	}
 	condition = {
+		tooltip = CANNOT_DECLARE_WARS_TEUTONS_HRE
+		potential = {
+			ai = yes 
+			has_country_flag = teu_joined_the_hre
+			FROM = { is_part_of_hre = yes }
+		}
+		allow = { 
+			FROM = { is_part_of_hre = no }
+		}
+	condition = {
 		tooltip = BREAKING_ALLIANCE_RULES
 		potential = { 
 			is_player = yes
-			has_country_flag = breaking_rules
+			AND = {
+				has_country_flag = breaking_rules
+				NOT = { has_country_flag = disable_alliance_system }
+			}
 		}
 		allow = {
 			always = no
@@ -162,6 +175,20 @@ declarewar = {
 	}
 	effect = {
 		on_war_declaration_effect = yes
+		if = {
+			limit = { 
+				mission_completed = hun_the_anatolian_threat
+				NOT = {
+					has_country_flag = hun_declared_first_war_against_tur
+				}
+				FROM = { tag = TUR }
+			}
+			add_country_modifier = {
+				name = hun_avenge_varna
+				duration = -1
+			}
+			set_country_flag = hun_declared_first_war_against_tur
+		}
 		if = {
 			limit = { 
 				has_country_flag = nor_norwegian_independence_modifier
@@ -185,6 +212,44 @@ declarewar = {
 				days = 10
 			}
 		}
+		if = {
+			limit = {
+				has_country_flag = ned_no_stab_loss_on_independence_flag
+				war_with = BUR
+				has_casus_belli = {
+					type = cb_independence_war
+					target = FROM
+				}
+			}
+			clr_country_flag = ned_no_stab_loss_on_independence_flag
+			add_stability = 1
+		}
+		if = {
+            limit = {
+                NOT = { has_global_flag = flavor_ita_7_fired }
+                FROM = {
+                    is_emperor = yes
+                }
+                is_in_war = {
+                    attacker_leader = ROOT
+                    defender_leader = FROM
+                    casus_belli = cb_ita_dismantle_hre
+                }
+            }
+            set_global_flag = flavor_ita_7_fired
+            every_elector = {
+                limit = {
+                    NOT = { 
+                        OR = {
+                            alliance_with = ROOT
+                            is_subject_of = ROOT
+                        }
+                    }
+                    NOT = { is_emperor = yes }
+                }
+                country_event = { id = flavor_ita.7 }
+            }
+        }
 	}
 }
 
@@ -300,7 +365,11 @@ allianceaction = {
 	condition = {
 		tooltip = BREAKING_ALLIANCE_RULES
 		potential = {
-			has_country_flag = breaking_rules
+			AND = {
+				has_country_flag = breaking_rules
+				NOT = { has_country_flag = disable_alliance_system }
+
+			}
 		}
 		allow = {
 			always = no
@@ -309,8 +378,11 @@ allianceaction = {
 	condition = {
 		tooltip = FROM_BREAKING_ALLIANCE_RULES
 		potential = {
-			FROM = {
-				has_country_flag = breaking_rules
+			AND = {
+				NOT = { has_country_flag = disable_alliance_system }
+				FROM = {
+					has_country_flag = breaking_rules
+				}
 			}
 		}
 		allow = {
@@ -338,12 +410,12 @@ allianceaction = {
 		}
 	}
 	effect = {
-		set_country_flag = force_update_treaties
+		change_asha_vahishta = { value = 2 }
 		country_event = {
 			id = as.4
 		}
 		FROM = {
-			set_country_flag = force_update_treaties
+			
 			country_event = {
 				id = as.4
 			}
@@ -369,6 +441,21 @@ enforce_peace = {
 			}
 			add_papal_influence = 25
 		}
+		if = {
+			limit = {
+				has_government_mechanic = the_three_royal_fires_mechanic
+				FROM = {
+					any_war_enemy_country = {
+						religion = zoroastrian
+						is_in_war = {
+							defender_leader = this
+							attacker_leader = from
+						}
+					}
+				}
+			}
+			change_asha_vahishta = { value = 5 }
+		}
 	}
 }
 
@@ -379,6 +466,89 @@ royal_marriage = {
 		}
 		allow = {
 			NOT = { war_with = FROM }
+		}
+	}
+	effect = {
+		change_asha_vahishta = { value = 0.5 }
+	}
+}
+
+guaranteeaction = {
+	effect = {
+		change_asha_vahishta = { value = 1 }
+	}
+}
+threaten_war = {
+	effect = {
+		change_asha_vahishta = { value = -10 }
+	}
+}
+insultaction = {
+	effect = {
+		change_asha_vahishta = { value = -5 }
+	}
+}
+giftaction = {
+	effect = {
+		change_asha_vahishta = { value = 1 }
+	}
+}
+fabricate_claim = {
+	effect = {
+		change_asha_vahishta = { value = -1 }
+	}
+}
+break_marriage = {
+	effect = {
+		change_asha_vahishta = { value = -1 }
+		if = {
+			limit = {
+				has_country_flag = received_burgundian_marriage
+				FROM = { tag = BUR }
+			}
+			clr_country_flag = received_burgundian_marriage
+		}
+		if = {
+			limit = {
+				tag = BUR
+				FROM = { has_country_flag = received_burgundian_marriage }
+			}
+			FROM = { clr_country_flag = received_burgundian_marriage }
+		}
+	}
+}
+takeondebt = {
+	effect = {
+		change_asha_vahishta = { value = 2 }
+	}
+}
+influence_nation = {
+	effect = {
+		change_asha_vahishta = { value = 2 }
+		
+		if = {
+			limit = {
+				has_country_flag = GER_buff_influence_nation_flag
+			}
+			add_favors = {
+			   who = FROM
+			   amount = 5
+			}
+		}
+	}
+}
+intervene_in_war = {
+	effect = {
+		change_asha_vahishta = { value = 50 }
+		
+		if = {
+			limit = {
+				has_country_flag = GER_buff_great_power_interactions_flag
+			}
+			add_power_projection = {
+				type = GER_intervene_in_war_pp
+				amount = 15
+			}
 		}
 	}
 }
@@ -443,13 +613,48 @@ annexationaction = {
 			crown_land_share = 50
 		}
 	}
+	condition = {
+		tooltip = NEEDS_TO_HAVE_SEIZED_LAND
+		potential = {
+			has_government_attribute = has_appanages
+			NOT = {
+				check_variable = {
+					which = can_annex_appanages_points
+					value = 1
+				}
+			}
+		}
+		allow = {
+			check_variable = {
+				which = can_annex_appanages_points
+				value = 1
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				FROM = { is_subject_of_type = appanage }
+			}
+			subtract_variable = {
+				which = can_annex_appanages_points
+				value = 1
+			}
+		}
+	}
 }
 
 integrationaction = {
 	condition = {
 		tooltip = INTEGRATETOOLOWDESC
 		potential = {
-			senior_union_with = FROM
+			OR = {
+				senior_union_with = FROM
+				FROM = {
+					is_subject_of = ROOT
+					is_subject_of_type = mongol_brother_realm
+				}
+			}
 		}
 		allow = {
 			FROM = {
@@ -538,7 +743,7 @@ form_coalition = {
 				has_opinion_modifier = {
 					modifier = aggressive_expansion
 					who = FROM
-					value = -50
+					value = -49
 				}
 			}
 		}
@@ -567,11 +772,16 @@ invite_to_trade_league = {
 		potential = {
 		}
 		allow = {
-			from = {
-				home_trade_node = {
-					trade_share = {
-						country = root
-						share = 1
+			if = {
+				limit = {
+					NOT = { has_country_flag = ven_easier_to_invite_trade_league_members_yes_flag }
+				}
+				from = {
+					home_trade_node = {
+						trade_share = {
+							country = root
+							share = 1
+						}
 					}
 				}
 			}
@@ -615,8 +825,11 @@ tributary_state_action = {
 	condition = {
 		tooltip = FROM_BREAKING_ALLIANCE_RULES
 		potential = {
-			FROM = {
-				has_country_flag = breaking_rules
+			AND = {
+				NOT = { has_country_flag = disable_alliance_system }
+				FROM = {
+					has_country_flag = breaking_rules
+				}
 			}
 		}
 		allow = {
@@ -658,7 +871,10 @@ ask_for_tributary_state_action = {
 	condition = {
 		tooltip = BREAKING_ALLIANCE_RULES
 		potential = {
-			has_country_flag = breaking_rules
+			AND = {
+				has_country_flag = breaking_rules
+				NOT = { has_country_flag = disable_alliance_system }
+			}
 		}
 		allow = {
 			always = no
@@ -669,6 +885,17 @@ ask_for_tributary_state_action = {
 break_alliance = {
 	effect = {
 		on_alliance_broken_effect = yes
+
+		# Alliance System
+		country_event = {
+			id = as.4
+		}
+		FROM = {
+			
+			country_event = {
+				id = as.4
+			}
+		}
 	}
 }
 
@@ -676,8 +903,11 @@ guaranteeaction = {
 	condition = {
 		tooltip = FROM_BREAKING_ALLIANCE_RULES
 		potential = {
-			FROM = {
-				has_country_flag = breaking_rules
+			AND = {
+				NOT = { has_country_flag = disable_alliance_system }
+				FROM = {
+					has_country_flag = breaking_rules
+				}
 			}
 		}
 		allow = {
@@ -697,7 +927,7 @@ guaranteeaction = {
 	}
 	effect = {
 		FROM = {
-			set_country_flag = force_update_treaties
+			
 			country_event = {
 				id = as.4
 			}
@@ -709,8 +939,11 @@ support_independence_action = {
 	condition = {
 		tooltip = FROM_BREAKING_ALLIANCE_RULES
 		potential = {
-			FROM = {
-				has_country_flag = breaking_rules
+			AND = {
+				NOT = { has_country_flag = disable_alliance_system }
+				FROM = {
+					has_country_flag = breaking_rules
+				}
 			}
 		}
 		allow = {
@@ -746,14 +979,14 @@ support_independence_action = {
 				}
 			}
 			FROM = {
-				set_country_flag = force_update_treaties
+				
 				country_event = {
 					id = as.4
 				}
 			}
 		}
 		else = {
-			set_country_flag = force_update_treaties
+			
 			country_event = {
 				id = as.4
 			}
